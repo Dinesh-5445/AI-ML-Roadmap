@@ -1,10 +1,10 @@
-<div align="center">
+<div align="center"> 
 
 # 🧠 AI / ML ROADMAP
 
 ### A Complete, Deep Guide — From Python to Production AI Systems, and Into a Career
 
-</div>
+ </div> 
 
 ---
 
@@ -23,7 +23,7 @@ The roadmap is organized by **conceptual dependency** — each layer needs the o
 
 ```mermaid
 flowchart TD
-    A[Programming Foundation] --> B[Mathematics & Statistics]
+    A[Programming Foundation] --> B[Math & Statistics]
     B --> C[Python Data / ML Ecosystem]
     C --> D[Data Analysis & Preprocessing]
     D --> E[Machine Learning]
@@ -32,9 +32,9 @@ flowchart TD
     G --> H[CV / Sequence Models / NLP]
     H --> I[Transformers]
     I --> J[Generative AI]
-    J --> K[Large Language Models]
-    K --> L[Fine-Tuning]
-    K --> M[Embeddings & Vector DBs]
+    J --> K[LLMs / Foundation Models]
+    K --> L[Adaptation & Fine-Tuning]
+    K --> M[Embeddings & Vector Search]
     M --> N[RAG]
     L --> O[Multimodal AI]
     N --> O
@@ -43,6 +43,12 @@ flowchart TD
     Q --> R[Application Engineering]
     R --> S[Cloud / Deployment]
     S --> T[MLOps / LLMOps / AgentOps]
+    P --> U[Agent Systems Branch]
+    U --> V[Single-Agent Systems]
+    U --> W[Multi-Agent Systems]
+    U --> X[Agent Harness / Runtime]
+    T --> Y[Production Reliability]
+    Y --> Z[Career Specialization]
 ```
 
 > **Legend:** 🟢 Foundation · 🔵 Core · 🟣 Advanced · 🟠 Production
@@ -53,7 +59,7 @@ flowchart TD
 
 Before the roadmap, here's the one-paragraph version of the entire field, so every section below has a place to attach to.
 
-**Artificial Intelligence (AI)** is the broad goal: making machines do things that normally require human intelligence. **Machine Learning (ML)** is the dominant *method* we use to get there today: instead of hand-coding rules, you show a system lots of examples and it learns the pattern itself. **Deep Learning** is a specific ML technique that uses layered neural networks to learn very complex patterns directly from raw data (pixels, audio, text) instead of hand-engineered features. **Generative AI** is deep learning turned toward *creating* new content (text, images, audio, video) rather than just classifying or predicting. A **Large Language Model (LLM)** is a generative model specialized in text — trained to predict the next word so well that it can converse, reason, and follow instructions. **RAG (Retrieval-Augmented Generation)** is a technique for giving an LLM access to specific, current, or private knowledge it wasn't trained on, by fetching relevant documents and handing them to the model at answer-time. An **AI Agent** takes this further: instead of just answering, it can take actions — call tools, run code, query databases, and loop until a goal is done. Everything from "MLOps" to "AgentOps" is the engineering discipline of running these systems reliably once they leave a notebook and go into production.
+**Artificial Intelligence (AI)** is the broad field of building systems that perform tasks associated with intelligence. **Machine Learning (ML)** is a major approach in which systems learn patterns from data or experience rather than relying only on hand-written rules. **Deep Learning** is ML based on layered neural networks that learn representations from data. **Generative AI** refers to models and systems that generate new content or structured outputs; many modern generative systems are deep-learning based, but the concepts are not identical. A **Large Language Model (LLM)** is a language model trained at large scale, typically using Transformer-based architectures, to model sequences of tokens and support generation and other language tasks. **RAG (Retrieval-Augmented Generation)** supplies external information to a model at inference time rather than changing its weights. An **AI Agent** is a system that uses a model inside a control loop to select actions, use tools, maintain state, and work toward a goal. **MLOps, LLMOps, and AgentOps** are related production disciplines, but they address different operational units and failure modes.
 
 That's the whole shape of the field. Everything below is the depth behind each piece.
 
@@ -67,8 +73,7 @@ That's the whole shape of the field. Everything below is the depth behind each p
 
 ---
 
-<details open>
-<summary><h2>🟢 01 — Programming Foundation</h2></summary>
+ <details open> <summary><h2>🟢 01 — Programming Foundation</h2></summary> 
 
 Every other layer in this roadmap assumes you can write and reason about code. Python is the default language of AI/ML because its libraries (NumPy, PyTorch, Hugging Face, etc.) are the field's shared infrastructure.
 
@@ -82,12 +87,11 @@ Every other layer in this roadmap assumes you can write and reason about code. P
 
 **Why it matters:** weak fundamentals here don't show up immediately — they show up later as "I understand the ML concept but can't implement it," which is the single most common place learners get stuck.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟢 02 — Mathematics & Statistics</h2></summary>
+ <details> <summary><h2>🟢 02 — Mathematics & Statistics</h2></summary> 
 
 You don't need a math degree, but you need to understand *why* the algorithms work — otherwise ML becomes "copy code and hope," which breaks the moment something goes wrong in production.
 
@@ -103,32 +107,30 @@ You don't need a math degree, but you need to understand *why* the algorithms wo
 
 **Information Theory** — the math behind how models measure "surprise" and "error": Entropy, Cross-Entropy, KL Divergence. Cross-entropy loss is the single most common training objective in both classification and language modeling.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 03 — Python Data & ML Ecosystem</h2></summary>
+ <details> <summary><h2>🔵 03 — Python Data & ML Ecosystem</h2></summary> 
 
 This is the toolbox you'll use in almost every project from here forward.
 
-| Library | Purpose | What you'll actually do with it |
-|---|---|---|
-| NumPy | Numerical computing | Fast array math underneath almost everything else |
-| Pandas | Data manipulation | Load, clean, filter, and reshape tabular data |
-| Matplotlib / Seaborn | Visualization | Plot distributions, trends, and model results |
-| SciPy | Scientific computing | Statistical tests, optimization, signal processing |
-| Scikit-learn | Classical machine learning | Train/evaluate traditional ML models with a consistent API |
-| Jupyter | Interactive experimentation | Iterate on data and models cell-by-cell |
+| Library Purpose What you'll actually do with it  |                             |                                                            |
+| ------------------------------------------------ | --------------------------- | ---------------------------------------------------------- |
+| NumPy                                            | Numerical computing         | Fast array math underneath almost everything else          |
+| Pandas                                           | Data manipulation           | Load, clean, filter, and reshape tabular data              |
+| Matplotlib / Seaborn                             | Visualization               | Plot distributions, trends, and model results              |
+| SciPy                                            | Scientific computing        | Statistical tests, optimization, signal processing         |
+| Scikit-learn                                     | Classical machine learning  | Train/evaluate traditional ML models with a consistent API |
+| Jupyter                                          | Interactive experimentation | Iterate on data and models cell-by-cell                    |
 
 **Skills to build:** loading and inspecting real datasets, building DataFrames, producing clear visualizations, running end-to-end ML pipelines with Scikit-learn before you ever touch deep learning.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 04 — Data Analysis & Preprocessing</h2></summary>
+ <details> <summary><h2>🔵 04 — Data Analysis & Preprocessing</h2></summary> 
 
 In real projects, **most of your time goes here, not on the model.** A great model trained on bad data produces bad results — this is the layer that prevents that.
 
@@ -140,22 +142,23 @@ In real projects, **most of your time goes here, not on the model.** A great mod
 
 **Why it matters:** "garbage in, garbage out" isn't a cliché in this field — it's the most common reason real-world models underperform their benchmarks.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 05 — Machine Learning</h2></summary>
+ <details> <summary><h2>🔵 05 — Machine Learning</h2></summary> 
 
 This is the classical core of the field — algorithms that find patterns in structured data.
 
 ### Supervised Learning
+
 You give the model labeled examples (input → correct answer), and it learns the mapping.
 
 - **Regression** (predicting a number): Linear Regression, Polynomial Regression, Regularization (Ridge/Lasso/ElasticNet — techniques that prevent the model from over-relying on any one feature)
 - **Classification** (predicting a category): Logistic Regression (despite the name, this is a classifier, not a regression model — it predicts a probability of belonging to a class), K-Nearest Neighbors (KNN), Naive Bayes, Decision Trees, Random Forest, Support Vector Machines (SVM), Gradient Boosting, XGBoost, LightGBM, CatBoost
 
 ### Unsupervised Learning
+
 You give the model unlabeled data and ask it to find structure on its own.
 
 - **Clustering:** K-Means, Hierarchical Clustering, DBSCAN, Gaussian Mixture Models
@@ -163,21 +166,22 @@ You give the model unlabeled data and ask it to find structure on its own.
 - **Anomaly Detection:** finding the data points that don't fit the pattern (fraud, defects, intrusions)
 
 ### Reinforcement Learning (RL)
+
 An agent learns by **interacting with an environment** and receiving rewards or penalties — it is *not* "learning without data"; the data is the experience it generates (sequences of state, action, reward) rather than a fixed labeled dataset handed to it upfront.
 
 ```text
 Agent --Action--> Environment --State + Reward--> Agent --Repeat-->
+
 ```
 
 **Concepts:** Agent, Environment, State, Action, Reward, Policy, Value Function, Q-Function, Markov Decision Process, Exploration vs. Exploitation
 **Algorithms:** Q-Learning, SARSA, DQN, Policy Gradient, Actor-Critic, PPO — this last one, PPO, is also the algorithm behind RLHF, the technique used to align modern chatbots (see §15).
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 06 — ML Engineering</h2></summary>
+ <details> <summary><h2>🔵 06 — ML Engineering</h2></summary> 
 
 Building a model is easy; knowing whether it's actually good, and making that measurement repeatable, is the real skill.
 
@@ -189,12 +193,11 @@ Building a model is easy; knowing whether it's actually good, and making that me
 
 **Engineering practice:** Scikit-learn Pipelines (chaining preprocessing + model into one reusable object), Model Serialization (saving a trained model to disk), Experiment Tracking (recording what you tried and what worked), Reproducibility, Model Comparison.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 07 — Deep Learning</h2></summary>
+ <details> <summary><h2>🔵 07 — Deep Learning</h2></summary> 
 
 Deep Learning trades hand-engineered features for **layered neural networks that learn representations directly from raw data**. This is the technique behind everything from image recognition to modern LLMs.
 
@@ -212,12 +215,11 @@ Deep Learning trades hand-engineered features for **layered neural networks that
 
 **Frameworks:** PyTorch (the current industry default for research and most production LLM work), TensorFlow, Keras.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 08 — Computer Vision</h2></summary>
+ <details> <summary><h2>🔵 08 — Computer Vision</h2></summary> 
 
 Teaching machines to interpret images and video.
 
@@ -229,12 +231,11 @@ Teaching machines to interpret images and video.
 
 **Modern Vision:** YOLO (real-time object detection), Vision Transformers, Image Embeddings, Vision-Language Models (models that connect images and text, like the ones powering "describe this photo").
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 09 — Sequence Modeling</h2></summary>
+ <details> <summary><h2>🔵 09 — Sequence Modeling</h2></summary> 
 
 Architectures built for data where **order matters** — text, audio, time series.
 
@@ -242,12 +243,11 @@ Sequential Data · RNN (Recurrent Neural Network — processes one element at a 
 
 > RNNs and LSTMs remain useful for streaming, low-latency, or resource-constrained settings, but Transformers (§11) have replaced them for most modern NLP and multimodal work, because attention can be computed in parallel across a whole sequence while recurrence must be computed one step at a time.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🔵 10 — Natural Language Processing (NLP)</h2></summary>
+ <details> <summary><h2>🔵 10 — Natural Language Processing (NLP)</h2></summary> 
 
 Teaching machines to work with human language — the direct predecessor to modern LLMs.
 
@@ -259,12 +259,11 @@ Teaching machines to work with human language — the direct predecessor to mode
 
 **Classic tasks:** Text Classification, Sentiment Analysis, Named Entity Recognition (NER), Part-of-Speech (POS) Tagging, Language Modeling, Text Generation.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 11 — Transformers</h2></summary>
+ <details> <summary><h2>🟣 11 — Transformers</h2></summary> 
 
 The architecture behind essentially every modern LLM, and one of the most important ideas in the last decade of AI.
 
@@ -273,16 +272,16 @@ The architecture behind essentially every modern LLM, and one of the most import
 **Full architecture:** Positional Encoding/Embeddings (since attention has no built-in sense of word order, this injects it back in), Feed-Forward Networks, Residual Connections, Layer Normalization, Encoder, Decoder, Encoder-Decoder Architecture, Masked Attention, Causal Attention (prevents a model from "seeing the future" tokens during generation).
 
 **Landmark architectures:**
+
 - **BERT** — encoder-only, built for *understanding* text (classification, search)
 - **GPT** — decoder-only, built for *generating* text one token at a time (the family behind most modern chat LLMs)
 - **T5** — encoder-decoder, built for text-to-text tasks like translation and summarization
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 12 — Generative AI</h2></summary>
+ <details> <summary><h2>🟣 12 — Generative AI</h2></summary> 
 
 The umbrella term for AI systems that **create new content** rather than only classify or predict.
 
@@ -290,12 +289,11 @@ The umbrella term for AI systems that **create new content** rather than only cl
 
 **Modalities:** Text Generation, Image Generation, Audio Generation, Video Generation, Multimodal Generation.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 13 — Large Language Models (LLMs)</h2></summary>
+ <details> <summary><h2>🟣 13 — Large Language Models (LLMs)</h2></summary> 
 
 An LLM is a Transformer-based model trained on enormous amounts of text to predict the next token — and that simple objective, at large enough scale, produces the ability to converse, summarize, reason, and follow instructions.
 
@@ -308,17 +306,19 @@ An LLM is a Transformer-based model trained on enormous amounts of text to predi
 **Scaling:** Model Size, Scaling Laws (the observed relationship between model size, data size, compute, and performance), Compute, Training Data.
 
 **How inference actually works, step by step:**
+
 ```text
 Your Prompt → Tokens → Model Forward Pass → Logits → Probabilities → Sample Next Token → Repeat
+
 ```
+
 Every response you get from a chatbot is this loop running one token at a time.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 14 — LLM Inference & Decoding</h2></summary>
+ <details> <summary><h2>🟣 14 — LLM Inference & Decoding</h2></summary> 
 
 Once a model produces probabilities for the next token, something has to decide *which* token to actually pick — that's decoding.
 
@@ -326,12 +326,11 @@ Once a model produces probabilities for the next token, something has to decide 
 
 **Making inference fast and cheap at scale:** Context Management, KV Cache (reusing previously computed attention values so generating token N+1 doesn't recompute everything from scratch), Batching, Streaming, Quantization (reducing numeric precision to cut memory/compute cost — see §21), Latency, Throughput.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 15 — LLM Adaptation & Fine-Tuning</h2></summary>
+ <details> <summary><h2>🟣 15 — LLM Adaptation & Fine-Tuning</h2></summary> 
 
 Once you have a base LLM, there are two very different ways to make it more useful for your specific need — and knowing which one to reach for is a core skill.
 
@@ -345,21 +344,20 @@ Once you have a base LLM, there are two very different ways to make it more usef
 
 ### Deciding: RAG or Fine-Tuning?
 
-| Your requirement | Better approach |
-|---|---|
-| Frequently changing knowledge (news, prices, docs that update) | RAG |
-| Private or proprietary documents | RAG |
-| External, queryable knowledge in general | RAG |
-| Consistent output format or tone | Fine-Tuning |
-| A specific behavior or task specialization | Fine-Tuning |
-| You need both current knowledge *and* changed behavior | RAG + Fine-Tuning together |
+| Your requirement Better approach                               |                            |
+| -------------------------------------------------------------- | -------------------------- |
+| Frequently changing knowledge (news, prices, docs that update) | RAG                        |
+| Private or proprietary documents                               | RAG                        |
+| External, queryable knowledge in general                       | RAG                        |
+| Consistent output format or tone                               | Fine-Tuning                |
+| A specific behavior or task specialization                     | Fine-Tuning                |
+| You need both current knowledge *and* changed behavior         | RAG + Fine-Tuning together |
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 16 — Embeddings & Vector Databases</h2></summary>
+ <details> <summary><h2>🟣 16 — Embeddings & Vector Databases</h2></summary> 
 
 This is the machinery that makes RAG possible.
 
@@ -369,12 +367,11 @@ This is the machinery that makes RAG possible.
 
 **Vector Databases / Systems:** FAISS, Chroma, Pinecone, Weaviate, Milvus, pgvector — these store embeddings and let you search them efficiently at scale.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 17 — Retrieval-Augmented Generation (RAG)</h2></summary>
+ <details> <summary><h2>🟣 17 — Retrieval-Augmented Generation (RAG)</h2></summary> 
 
 RAG solves a fundamental LLM limitation: the model only "knows" what was in its training data, and that data is frozen at training time. RAG fixes this by fetching relevant, current, or private information at answer-time and handing it to the model as context.
 
@@ -388,9 +385,11 @@ flowchart LR
     Retrieve --> Context[Relevant Context]
     Context --> LLM[LLM]
     LLM --> Answer
+
 ```
 
 **Core components, explained in order:**
+
 1. **Document Loading & Parsing** — get your source documents into text
 2. **Chunking** — split documents into smaller pieces (chunk size and overlap both matter a lot for quality)
 3. **Embedding** — convert each chunk into a vector
@@ -415,16 +414,16 @@ Agentic RAG
 ├── Iterative Retrieval     — retrieve, read, and retrieve again if the first pass was insufficient
 ├── Corrective / Adaptive Retrieval — detect weak or contradictory context, reformulate, retry
 └── Verification           — check that retrieved evidence actually supports the final answer
+
 ```
 
 > **RAG vs. Agents, precisely:** RAG is a retrieval *architecture*. An Agent is a *control loop that chooses actions*. Agentic RAG is what happens when an agent treats retrieval as just one tool among several, instead of a fixed pipeline stage it always runs.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 18 — Multimodal AI</h2></summary>
+ <details> <summary><h2>🟣 18 — Multimodal AI</h2></summary> 
 
 Systems that work across more than one type of data at once.
 
@@ -432,26 +431,26 @@ Systems that work across more than one type of data at once.
 
 **Technologies:** Vision-Language Models (understand images and text together — e.g., answering questions about a photo), Image Understanding, Speech-to-Text, Text-to-Speech, Audio Understanding, Multimodal Embeddings (a shared vector space across modalities, so an image and its caption can be compared directly), Multimodal LLMs.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 19 — Agentic AI</h2></summary>
+ <details> <summary><h2>🟣 19 — Agentic AI</h2></summary> 
 
 An **AI agent** combines a model with reasoning, tools, memory, and state so it can pursue a goal across multiple steps — not just answer one question, but *do* something, checking its own progress along the way.
 
 ### Five terms people constantly confuse
 
-| Term | What it actually is |
-|---|---|
-| **Model** | The foundation model itself (e.g., an LLM). Reasons over context and produces tokens. No memory, tools, or persistence on its own. |
-| **Agent** | Model + a goal + the ability to choose actions/tools in a loop. Shorthand used in the industry: "Agent = Model + Harness." |
-| **Agent Runtime** | The execution substrate that actually runs the loop: calls the model, invokes tools, tracks state between steps. |
-| **Harness** | The engineering layer *around* the model that turns it into a working agent — context management, tool registry, memory, permissions, verification, retries, observability. The harness is external to the model and can be tested independently of it. |
-| **AI System** | The full production system: one or more agents, the harness, data stores, APIs, UI, monitoring, and the human processes around all of it. |
+| Term What it actually is  |                                                                                                                                                                                                                                                         |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Model**                 | The foundation model itself (e.g., an LLM). Reasons over context and produces tokens. No memory, tools, or persistence on its own.                                                                                                                      |
+| **Agent**                 | Model + a goal + the ability to choose actions/tools in a loop. Shorthand used in the industry: "Agent = Model + Harness."                                                                                                                              |
+| **Agent Runtime**         | The execution substrate that actually runs the loop: calls the model, invokes tools, tracks state between steps.                                                                                                                                        |
+| **Harness**               | The engineering layer *around* the model that turns it into a working agent — context management, tool registry, memory, permissions, verification, retries, observability. The harness is external to the model and can be tested independently of it. |
+| **AI System**             | The full production system: one or more agents, the harness, data stores, APIs, UI, monitoring, and the human processes around all of it.                                                                                                               |
 
 ### Agent Fundamentals
+
 Goal · State · Context · Reasoning · Planning · Action · Observation
 
 ### The Agent Loop
@@ -465,23 +464,29 @@ flowchart LR
     Verify -->|fail| Recover[Recover / Retry]
     Recover --> Observe
     Verify -->|pass| Stop((Stop / Return))
+
 ```
 
 Every agent, no matter how it's built, is running some version of this loop: look at the current situation, decide what to do, do it through a tool, check whether it worked, and either stop or try again.
 
 ### Tool Use
+
 Function Calling, APIs, Databases, Search, Code Execution, External Services. **Tool & Context Protocols** (standards like the Model Context Protocol define a common way for a model to discover and call tools/context sources across different vendors, replacing one-off custom integrations per app).
 
 ### Memory & State
+
 Working Memory (within a single step) · Session / Short-Term Memory (within a conversation) · Long-Term Memory (persisted across sessions) · Retrieval Memory (backed by a vector store, effectively RAG applied to the agent's own memory) · Persistent State (files, databases).
 
 ### Context Engineering
+
 Deciding **what information actually enters the model's limited context window, and when** — this is different from Prompt Engineering (wording one turn well) and from Harness Engineering (the system that mechanically manages that context for you). Dumping everything the agent might need into context ("context rot") reliably makes agents *worse*, even with a strong model — the fix is progressive disclosure: give a short map up front, and pull in deeper detail only when it's actually needed.
 
 ### Planning & Reasoning Patterns
+
 ReAct (interleaving reasoning steps with tool-action steps), Plan-and-Execute (plan the whole task, then execute), Reflection (the agent critiques its own output before finishing), Replanning, Chain-of-Thought / Tree-of-Thought, Human-in-the-Loop (a person approves or corrects key steps).
 
 ### Harness Engineering
+
 The discipline of designing the constraints, feedback loops, and quality gates that make an agent reliable — treating unreliability as a *systems engineering* problem, not only a "better prompt" problem.
 
 ```text
@@ -498,22 +503,123 @@ Harness / Runtime
 ├── Sandbox / Execution Environment
 ├── Observability & Tracing
 └── Human Intervention / Approval
+
 ```
 
 > The core working principle in this discipline: when an agent makes a mistake, the durable fix is usually a change to the harness (a rule, a test, a guardrail) — not just a better prompt for next time.
 
 ### Multi-Agent Systems
+
 Instead of one agent doing everything, multiple specialized agents collaborate: Supervisor (routes work), Planner, Worker Agents (each handles a sub-task), Communication, Coordination, Handoffs, Shared State, Conflict / Failure Handling.
 
 ### Production Agent Systems
-Putting all of the above together at scale requires: Agent Orchestration, a Model/Provider Layer, a Tool Layer, a State Layer, a Memory Layer, a Context Layer, an Execution Layer, an Evaluation Layer, Guardrails, Permissions, Sandboxing, Observability, Tracing, Watcher/Observer Agents (a separate agent whose job is to catch the primary agent's mistakes), Failure Recovery, Human Approval.
 
-</details>
+Putting all of the above together at scale requires: Agent Orchestration, a Model/Provider Layer, a Tool Layer, a State Layer, a Memory Layer, a Context Layer, an Execution Layer, an Evaluation Layer, Guardrails, Permissions, Sandboxing, Observability, Tracing, Watcher/Observer mechanisms, Failure Recovery, and Human Approval.
+
+### Provider Layer
+
+A **provider layer** is an architectural abstraction that separates an agent/application from individual model vendors or inference backends.
+
+```text
+Agent / Application
+        ↓
+Provider Interface
+        ↓
+Hosted Model A · Hosted Model B · Local / Open-Weight Model
+        ↓
+Routing · Fallback · Policy · Cost · Latency Controls
+```
+
+Typical responsibilities: provider adapters, model selection, structured-output normalization, retries, fallbacks, rate limits, and routing. This is a useful system pattern, not a universal industry-standard layer.
+
+### Loop Engineering
+
+**Loop engineering** is best treated as an emerging practice rather than a universally standardized discipline. It focuses on the control loop itself:
+
+```text
+Observe → Decide → Act → Verify → Recover → Continue / Stop
+```
+
+Key concerns: termination conditions, maximum steps/autonomy budgets, retry and backoff policies, replanning, idempotency, checkpoints, resumability, verification before irreversible actions, human approval gates, and run-level cost/latency budgets.
+
+### Harness Engineering
+
+**Harness engineering** focuses on the engineered environment around a capable model: context management, tool exposure, constraints, feedback loops, verification, permissions, retries, observability, and durable quality gates. The current 2026 discussion increasingly treats the harness/runtime as a distinct control layer around the model.
+
+```text
+Agent Harness / Runtime
+├── Task Contract / Goal
+├── Context Management
+├── Model / Provider Access
+├── Model Routing / Gateway
+├── Tool Registry & Execution
+├── State & Memory
+├── Agent Loop Control
+├── Verification / Tests
+├── Retry / Recovery / Checkpoints
+├── Guardrails & Permissions
+├── Sandbox / Execution Environment
+├── Observability & Tracing
+├── Evaluation / Quality Gates
+└── Human Approval / Escalation
+```
+
+### Watcher / Observer Layer
+
+A **watcher layer** is a useful architecture pattern, not a standardized component. It monitors the primary agent/workflow for policy violations, stuck loops, anomalous behavior, failed verification, unsafe tool use, or poor progress.
+
+```text
+Primary Agent → Tools / Environment
+      │
+      └────────────→ Watcher / Observer
+                         ├─ Policy checks
+                         ├─ Progress / health checks
+                         ├─ Evaluation signals
+                         ├─ Anomaly detection
+                         └─ Stop / Repair / Escalate
+```
+
+A watcher can be deterministic code, an evaluator model, a monitoring service, or a combination. It does not have to be another autonomous agent.
+
+### Agentic RAG
+
+Basic RAG is usually a retrieval pipeline. **Agentic RAG** lets the control loop decide whether, what, and how often to retrieve.
+
+```text
+Goal → Query Plan → Choose Retrieval Tool
+              ↓
+   Vector / Hybrid / SQL / Web / Graph / API
+              ↓
+        Evidence → Verify
+              ↓
+       Replan / Retrieve Again / Answer
+```
+
+Core concepts: query planning, tool selection, iterative retrieval, query rewriting, corrective retrieval, evidence verification, source attribution, and retrieval/answer evaluation.
+
+### Multi-Agent Systems
+
+Multi-agent systems coordinate specialized agents rather than forcing one agent to perform every task.
+
+```text
+             Supervisor / Coordinator
+              /       |        \
+          Planner   Researcher  Executor
+             \        |         /
+              → Shared State / Handoffs
+```
+
+Patterns include Supervisor/Worker, Planner/Executor, peer collaboration, handoffs, shared state, message passing, role specialization, conflict resolution, and failure isolation.
+
+### "Ciao Engineering" — terminology check
+
+There is **no broadly established AI engineering discipline called "Ciao Engineering"** in the terminology reviewed for this roadmap. Do not list it as a formal skill or job requirement. If the intended term is context engineering, harness engineering, or loop engineering, use the verified term instead.
+
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟣 20 — Agent Frameworks & Tooling</h2></summary>
+ <details> <summary><h2>🟣 20 — Agent Frameworks & Tooling</h2></summary> 
 
 These are the concrete, current tools that implement the concepts from §19. **Treat this as an example list, not a foundation** — frameworks change far faster than the concepts behind them.
 
@@ -525,30 +631,28 @@ These are the concrete, current tools that implement the concepts from §19. **T
 
 **What you're actually learning through these tools:** Tool Abstractions, Provider Abstractions, Memory/Indexing, Execution Graphs, Agent Orchestration, Observability — the framework is just a convenient implementation of the concepts you already learned in §19.
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟠 21 — Open AI Ecosystem</h2></summary>
+ <details> <summary><h2>🟠 21 — Open AI Ecosystem</h2></summary> 
 
 These terms get used interchangeably in casual conversation, but they mean genuinely different things — and the difference matters for licensing, cost, and what you're legally allowed to do.
 
-| Term | Meaning |
-|---|---|
-| **Proprietary / API-only models** | Weights are never released; you can only access the model through a hosted API. |
-| **Open-weight models** | The trained weights are downloadable and runnable on your own hardware, but the training data and/or code may not be disclosed, and the license may still restrict certain uses. |
-| **Fully open models** | Weights **and** training data **and** training/eval code are all released, typically under a permissive license — this is the closest thing to true "open source" in the ML sense. |
-| **Source-available** | The code is visible, but the license restricts commercial use or modification — not the same thing as open source. |
+| Term Meaning                      |                                                                                                                                                                                    |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Proprietary / API-only models** | Weights are never released; you can only access the model through a hosted API.                                                                                                    |
+| **Open-weight models**            | The trained weights are downloadable and runnable on your own hardware, but the training data and/or code may not be disclosed, and the license may still restrict certain uses.   |
+| **Fully open models**             | Weights **and** training data **and** training/eval code are all released, typically under a permissive license — this is the closest thing to true "open source" in the ML sense. |
+| **Source-available**              | The code is visible, but the license restricts commercial use or modification — not the same thing as open source.                                                                 |
 
 **Related concepts:** Model Hubs (repositories for discovering and downloading model weights), Local Inference, Self-Hosting, Quantization, GPU/CPU Inference, Fine-Tuning Open Models, Inference Servers, **Model Routing / Gateways** (a layer that automatically picks among multiple models or providers per request, based on cost, latency, or capability needs).
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟠 22 — AI Systems Engineering</h2></summary>
+ <details> <summary><h2>🟠 22 — AI Systems Engineering</h2></summary> 
 
 This is a distinct layer from Application Engineering (§23): it's about making the **agent or AI system itself** reliable, observable, and safe — independent of any particular customer-facing product built on top of it.
 
@@ -558,12 +662,11 @@ This is a distinct layer from Application Engineering (§23): it's about making 
 - Sandboxing and limiting the "blast radius" of autonomous actions
 - Cross-cutting observability across models, tools, and agents — not just application logs
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟠 23 — AI Application Engineering</h2></summary>
+ <details> <summary><h2>🟠 23 — AI Application Engineering</h2></summary> 
 
 Once the model, the agent, and the system around it are solid, this is how you turn them into something a real user can actually use.
 
@@ -573,14 +676,14 @@ Once the model, the agent, and the system around it are solid, this is how you t
 
 ```text
 Frontend → API/Backend → { LLM · RAG · Tools · Database · Agent }
+
 ```
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟠 24 — Deployment & Cloud</h2></summary>
+ <details> <summary><h2>🟠 24 — Deployment & Cloud</h2></summary> 
 
 Getting your model or application from your laptop into something other people can reliably use.
 
@@ -590,12 +693,11 @@ Getting your model or application from your laptop into something other people c
 **Cloud (pick one and go deep):** AWS, Azure, or Google Cloud — Compute, Storage, Networking, IAM, Load Balancing, Autoscaling, Monitoring
 **AI-specific deployment:** GPU Deployment, Model Serving, Inference Servers, Serverless, Batch vs. Real-Time Inference
 
-</details>
+ </details> 
 
 ---
 
-<details>
-<summary><h2>🟠 25 — Production AI Operations: MLOps, LLMOps, AgentOps</h2></summary>
+ <details> <summary><h2>🟠 25 — Production AI Operations: MLOps, LLMOps, AgentOps</h2></summary> 
 
 These three are **layers that build on each other** — not three competing standards. Each one exists because the previous layer's tooling wasn't enough for the new kind of system:
 
@@ -613,13 +715,14 @@ MLOps                          LLMOps                         AgentOps
 ├─ Model Deployment            ├─ Guardrails                  ├─ Human Approval Workflows
 ├─ Drift Detection             ├─ Model Routing / Gateway     ├─ Failure Analysis
 └─ Retraining                  └─ Fallback Models             └─ Agent Reliability / Governance
+
 ```
 
 **Note on maturity:** MLOps is a well-established discipline with mature tooling. LLMOps is newer but has settled conventions. **AgentOps is the newest and least standardized of the three** — expect its tools and terminology to keep changing faster than the other two.
 
 **Representative tools:** MLflow, DVC (MLOps) · LLM tracing/evaluation platforms (LLMOps) · agent tracing/replay tooling (AgentOps).
 
-</details>
+ </details> 
 
 ---
 
@@ -627,150 +730,316 @@ MLOps                          LLMOps                         AgentOps
 
 ```text
 PROGRAMMING → MATH & STATS → DATA & PYTHON → PREPROCESSING → MACHINE LEARNING
-   → ML ENGINEERING → DEEP LEARNING → { CNN | RNN/LSTM | NLP } → TRANSFORMERS
-   → GENERATIVE AI → LLMs → { FINE-TUNING | RAG } → MULTIMODAL AI
-   → AGENTIC AI → AI SYSTEMS ENGINEERING → APPLICATION ENGINEERING
-   → CLOUD / DEPLOYMENT → MLOps / LLMOps / AgentOps
+   → ML ENGINEERING → DEEP LEARNING → { CNN | SEQUENCE MODELS | NLP } → TRANSFORMERS
+   → GENERATIVE AI → FOUNDATION MODELS / LLMs
+   → { ADAPTATION / FINE-TUNING | EMBEDDINGS / RETRIEVAL → RAG }
+   → MULTIMODAL AI → AGENTIC AI
+   → AI SYSTEMS ENGINEERING → APPLICATION ENGINEERING
+   → CLOUD / DEPLOYMENT → { MLOps | LLMOps | AgentOps }
+
 ```
 
 # 🧠 Mental Model — What Question Does Each Layer Answer?
 
-| Layer | Question It Answers |
-|---|---|
-| Python | How do I program? |
-| Mathematics | Why do ML algorithms actually work? |
-| Data | How do I prepare data that's actually usable? |
-| ML | How can machines learn patterns from data? |
-| Deep Learning | How can neural networks learn representations directly from raw data? |
-| Computer Vision | How can machines understand images and video? |
-| NLP | How can machines process human language? |
-| Transformers | How do modern foundation models process sequences efficiently? |
-| Generative AI | How can models create new content instead of just predicting? |
-| LLMs | How do large-scale language foundation models actually work? |
-| Fine-Tuning | How do I change a model's behavior directly? |
-| RAG | How do I give a model current or private knowledge it wasn't trained on? |
-| Multimodal AI | How can models reason across text, images, audio, and video together? |
-| Agentic AI | How can a model reason, use tools, and complete multi-step tasks toward a goal? |
-| AI Systems Engineering | How do I make the agent/system itself reliable and safe? |
-| Application Engineering | How do I turn this system into a product a real user can use? |
-| Cloud | Where does my application actually run? |
-| MLOps / LLMOps / AgentOps | How do I keep each of these layers running reliably once it's live? |
+| Layer Question It Answers  |                                                                                 |
+| -------------------------- | ------------------------------------------------------------------------------- |
+| Python                     | How do I program?                                                               |
+| Mathematics                | Why do ML algorithms actually work?                                             |
+| Data                       | How do I prepare data that's actually usable?                                   |
+| ML                         | How can machines learn patterns from data?                                      |
+| Deep Learning              | How can neural networks learn representations directly from raw data?           |
+| Computer Vision            | How can machines understand images and video?                                   |
+| NLP                        | How can machines process human language?                                        |
+| Transformers               | How do modern foundation models process sequences efficiently?                  |
+| Generative AI              | How can models create new content instead of just predicting?                   |
+| LLMs                       | How do large-scale language foundation models actually work?                    |
+| Fine-Tuning                | How do I change a model's behavior directly?                                    |
+| RAG                        | How do I give a model current or private knowledge it wasn't trained on?        |
+| Multimodal AI              | How can models reason across text, images, audio, and video together?           |
+| Agentic AI                 | How can a model reason, use tools, and complete multi-step tasks toward a goal? |
+| AI Systems Engineering     | How do I make the agent/system itself reliable and safe?                        |
+| Application Engineering    | How do I turn this system into a product a real user can use?                   |
+| Cloud                      | Where does my application actually run?                                         |
+| MLOps                      | How do I operate trained ML models and their data/model lifecycle?             |
+| LLMOps                     | How do I operate LLM-powered applications, prompts, evaluations, cost, and retrieval? |
+| AgentOps                   | How do I operate multi-step agent runs, tools, state, trajectories, and autonomous actions safely? |
 
 ---
 
 # ⚖️ Distinctions Worth Getting Exactly Right
 
-**Machine Learning vs. Deep Learning** — Classical ML learns from features you engineer by hand (e.g., linear regression, random forests). Deep Learning automatically learns hierarchical representations directly from raw data (CNNs from pixels, transformers from tokens) — no manual feature engineering required, at the cost of needing much more data and compute.
+**Machine Learning vs. Deep Learning** — Classical ML often relies more heavily on explicit feature engineering and structured/tabular inputs, while deep learning learns representations through neural networks and is especially effective for high-dimensional data such as images, audio, and language. The boundary is not absolute: modern ML systems can use learned representations, and deep-learning systems can still use engineered features.
 
 **Supervised vs. Unsupervised vs. Reinforcement**
 
-| Type | Signal it learns from | Example |
-|---|---|---|
-| Supervised | Labeled examples | Spam classification |
-| Unsupervised | Unlabeled data, structure only | Customer segmentation via clustering |
-| Reinforcement | Experience + reward from interaction | A game-playing agent |
+| Type Signal it learns from Example  |                                      |                                      |
+| ----------------------------------- | ------------------------------------ | ------------------------------------ |
+| Supervised                          | Labeled examples                     | Spam classification                  |
+| Unsupervised                        | Unlabeled data, structure only       | Customer segmentation via clustering |
+| Reinforcement                       | Experience + reward from interaction | A game-playing agent                 |
 
 **RAG vs. Fine-Tuning vs. Agents** — RAG supplies external knowledge at answer-time without touching the model's weights. Fine-Tuning changes the model's weights/behavior directly. An Agent is a control loop that can *use either RAG or a fine-tuned model* (and other tools) as part of accomplishing a broader goal — they solve different problems and are frequently combined.
 
 **Model vs. Application** — A model is one component. A real AI application also needs data pipelines, RAG, tools, an agent loop, an API layer, authentication, a UI, monitoring, and deployment infrastructure around it.
 
-</details>
-
 ---
 
 # 🧑‍💼 AI / Data / ML Career Map
 
-This is the part most roadmaps skip: **what job do you actually get after learning this, and what does that job involve day to day?**
+This roadmap is also a **career-differentiation map**. The common foundation is shared, but jobs diverge according to which part of the system you own.
 
-> **Important, up front:** job titles in this field are **not standardized**. Two companies can use "AI Engineer" for very different jobs, or use different titles for the same job. Use this map to understand what work each role actually involves — not to expect an exact title match on a job posting.
+> **Titles are not standardized.** "AI Engineer", "ML Engineer", "LLM Engineer", and "AI Systems Engineer" can mean different things at different companies. Use responsibilities and competency depth as the source of truth, then compare them with the actual job description.
+
+## How the Field Branches
 
 ```text
-Artificial Intelligence & Data
-├── Data & Analytics
+AI / DATA / COMPUTING
+│
+├── DATA & ANALYTICS
 │   ├── Data Analyst
-│   ├── Analytics Engineer
+│   ├── BI / Analytics Engineer
 │   ├── Data Engineer
 │   └── Data Architect
-├── Data Science
-│   └── Data Scientist
-├── Machine Learning
+│
+├── DATA SCIENCE & APPLIED ML
+│   ├── Data Scientist
+│   ├── Applied Scientist
 │   ├── ML Engineer
-│   ├── MLOps Engineer
-│   └── ML Platform / Research Engineer
-├── AI / Generative AI
-│   ├── AI Engineer
-│   ├── LLM Engineer
-│   ├── RAG Engineer
+│   └── Research Engineer
+│
+├── MODEL / AI SPECIALIZATION
 │   ├── NLP Engineer
-│   └── Computer Vision Engineer
-├── Agentic Systems
+│   ├── Computer Vision Engineer
+│   ├── LLM Engineer
+│   ├── Generative AI Engineer
+│   └── AI Engineer
+│
+├── RETRIEVAL & KNOWLEDGE SYSTEMS
+│   └── RAG / Retrieval Engineer
+│
+├── AGENT & AI SYSTEMS
 │   ├── Agentic AI Engineer
 │   ├── AI Systems Engineer
-│   └── Multi-Agent Systems Engineer
-├── Research
-│   └── Research Scientist
-├── Architecture & Product
+│   ├── Multi-Agent Systems Engineer
+│   ├── AI Infrastructure / Inference Engineer
 │   └── AI Solutions Architect
-└── Domain-Specific AI
-    ├── Financial Data Scientist / Quantitative Analyst
-    └── Healthcare AI / other domain specialists
+│
+├── PRODUCTION / PLATFORM
+│   ├── MLOps Engineer
+│   ├── LLMOps / AI Platform Engineer
+│   └── ML Platform Engineer
+│
+├── RESEARCH
+│   └── Research Scientist
+│
+└── DOMAIN AI
+    ├── Financial Data Scientist
+    ├── Quantitative Analyst / Researcher
+    ├── Risk / Fraud ML
+    └── Healthcare / Manufacturing / Other Domain AI
 ```
 
 ## What Each Role Actually Does
 
-| Role | What they actually do day to day | Core knowledge needed | Key technologies | How to prove you can do it |
+| Role | Primary responsibility | Deep skills | Typical stack | Strong portfolio evidence |
 |---|---|---|---|---|
-| **Data Analyst** | Answers business questions with existing data; builds dashboards and reports | SQL, statistics, visualization | BI tools, SQL, Pandas | A portfolio of dashboards + written analyses |
-| **Analytics Engineer** | Builds clean, well-modeled datasets that analysts can trust | SQL, data modeling | dbt, warehouse SQL | A modeled data pipeline with tests |
-| **Data Engineer** | Builds and maintains the pipelines and infrastructure that move and store data | ETL/ELT, databases, distributed systems | Airflow, Spark, cloud data services | A production-style pipeline project |
-| **Data Architect** | Designs data systems and standards for an entire organization | Data modeling, governance, systems design | Warehouses, lakehouses | Architecture documentation for a real system |
-| **Data Scientist** | Analyzes data to find patterns and builds predictive models to answer specific questions | Statistics, ML, experimentation | Scikit-learn, SQL, notebooks | Modeling case studies with clear business framing |
-| **ML Engineer** | Takes a model from notebook to a scalable, monitored production service | Software engineering + ML | PyTorch, APIs, cloud infra | A deployed model with an API and monitoring |
-| **MLOps Engineer** | Owns the deployment pipeline and lifecycle of models in production | CI/CD, infrastructure, monitoring | MLflow, Docker, Kubernetes | A CI/CD pipeline that retrains/redeploys a model |
-| **AI Engineer** | Builds end-to-end AI products — chat features, RAG systems, agents — and wires them into real software | APIs, LLM integration, backend engineering | LangChain, FastAPI, vector DBs | A working AI product, not just a notebook |
-| **LLM Engineer** | Works on fine-tuning, inference optimization, and evaluation of language models specifically | Transformer internals, PEFT, inference engineering | Hugging Face, LoRA/QLoRA | A fine-tuned model with a clear before/after evaluation |
-| **RAG Engineer** | Designs the retrieval pipelines that ground LLM answers in real documents | Embeddings, vector search, chunking strategy | FAISS/Pinecone/Weaviate | A RAG pipeline with a retrieval-quality evaluation |
-| **NLP Engineer** | Builds systems that extract structure or meaning from text | Classical + modern NLP | spaCy, Hugging Face Transformers | An NLP pipeline solving a concrete text problem |
-| **Computer Vision Engineer** | Builds models/pipelines that interpret images or video | CNNs, detection, segmentation | OpenCV, YOLO, PyTorch | A working vision demo with real data |
-| **Agentic AI Engineer** | Designs autonomous agents and multi-agent workflows that take real actions | Harness engineering, planning patterns, memory design | LangGraph, tool/function-calling APIs | A working agent with visible traces of its decisions |
-| **AI Systems Engineer** | Makes sure the agent/AI system as a whole is reliable, observable, and safe | Guardrails, observability, sandboxing, evaluation design | Tracing tools, eval harnesses | A writeup of failure modes you found and fixed |
-| **Multi-Agent Systems Engineer** | Builds coordinated workflows where several specialized agents work together | Orchestration, agent communication design | CrewAI, AutoGen | A working multi-agent demo with a clear division of labor |
-| **Research Scientist** | Advances the underlying science — new architectures, training methods, theory | Deep math and ML theory, experimental rigor | Research codebases, paper implementations | Publications or rigorous reproductions of papers |
-| **AI Solutions Architect** | Designs AI systems that meet a specific business's needs, often across teams | Systems design, cross-domain fluency, communication | Cloud platforms, integration patterns | Architecture proposals with trade-off reasoning |
-| **Financial Data Scientist / Quant** | Applies statistical and ML modeling to markets, risk, or trading strategies | Statistics, time series, financial theory | Python, backtesting frameworks | A backtested strategy with honest risk analysis |
+| **Data Analyst** | Business questions, reporting, dashboards, decision support | SQL, statistics, BI, visualization | SQL, Excel, Power BI/Tableau, Python | Dashboard + written analysis + recommendations |
+| **Analytics Engineer** | Reliable analytical datasets and semantic models | SQL, data modeling, testing | SQL, dbt, warehouse/lakehouse | Tested analytical models |
+| **Data Engineer** | Data ingestion, transformation, storage, serving | ETL/ELT, databases, distributed systems | Python/SQL, Spark, Airflow, cloud data services | Production-style pipeline |
+| **Data Architect** | Organization-wide data platform and governance design | Data modeling, architecture, governance | Warehouses, lakehouses, streaming, cloud | Architecture + trade-off document |
+| **Data Scientist** | Statistical analysis, experiments, predictive modeling | Statistics, ML, experimentation | Python, SQL, scikit-learn | End-to-end modeling case study |
+| **Applied Scientist** | Apply/adapt research methods to product problems | ML/DL, experimentation, research literacy | PyTorch, Transformers | Reproduction + improvement |
+| **ML Engineer** | Productionize and maintain ML models | ML + software engineering + deployment | PyTorch/sklearn, APIs, Docker, cloud | Deployed model + monitoring |
+| **MLOps Engineer** | Operate model lifecycle and delivery infrastructure | CI/CD, infra, monitoring | MLflow, Docker, Kubernetes, cloud | Automated training/deployment pipeline |
+| **ML Platform Engineer** | Build reusable ML infrastructure for teams | Distributed systems, platform engineering | Kubernetes, registries, data/feature platforms | Internal-style ML platform |
+| **NLP Engineer** | Language understanding/generation systems | NLP, Transformers, evaluation | Hugging Face, PyTorch | Production NLP system |
+| **Computer Vision Engineer** | Image/video understanding | CNNs, detection, segmentation, ViTs | PyTorch, OpenCV, YOLO | Vision system on real data |
+| **LLM Engineer** | Model adaptation, inference, evaluation, model behavior | Transformers, PEFT, inference | PyTorch, Hugging Face, LoRA/QLoRA | Fine-tuned/optimized model with benchmarks |
+| **Generative AI Engineer** | Generative features across text/image/audio/video | Foundation models, prompting, evals | Model APIs, open-weight models, PyTorch | Evaluated generative product |
+| **AI Engineer** | Integrate AI capabilities into software products | Backend + AI integration + evaluation | FastAPI/TypeScript, model APIs, DBs, RAG | Complete AI product |
+| **RAG / Retrieval Engineer** | Search/retrieval pipelines that ground model outputs | Embeddings, ranking, chunking, retrieval eval | FAISS/pgvector/vector DBs, hybrid search, rerankers | RAG with retrieval metrics |
+| **Agentic AI Engineer** | Goal-directed agents, tools, memory, loops, recovery | Agent design, harness, evaluation | Agent runtimes/frameworks, tool APIs | Agent with traces + recovery + evals |
+| **AI Systems Engineer** | Reliability, safety, observability, runtime control | Systems design, guardrails, evals | Tracing/eval stacks, sandbox/policy systems | Failure-mode-driven architecture |
+| **Multi-Agent Systems Engineer** | Coordination of specialized agents | Orchestration, communication, shared state | Graph/workflow runtimes, agent frameworks | Measured multi-agent workflow |
+| **AI Infrastructure / Inference Engineer** | Fast, efficient, reliable model serving | GPU systems, batching, quantization, distributed systems | Inference servers, CUDA ecosystem, Kubernetes | Throughput/latency benchmark |
+| **Research Engineer** | Implement and scale new research ideas | DL, systems, experimentation | PyTorch, distributed training | Rigorous paper reproduction |
+| **Research Scientist** | New algorithms, architectures, training methods, theory | Deep math + research methodology | Research codebases | Publications/novel research |
+| **AI Solutions Architect** | End-to-end AI architecture under business constraints | Systems, cloud, security, cost, communication | Cloud AI services, APIs, data platforms | Architecture proposals + trade-offs |
+| **Financial Data Scientist** | Statistical/ML modeling for finance | Statistics, time series, risk | Python, SQL, ML/DL | Finance model with rigorous validation |
+| **Quantitative Analyst / Researcher** | Mathematical/statistical models for markets, pricing, risk | Probability, statistics, optimization, finance | Python/C++, numerical/backtesting stack | Leakage-safe research/backtest |
+| **Risk / Fraud ML Engineer** | Fraud, credit, anomaly, operational-risk models | Imbalanced ML, time series/graphs, monitoring | Python, SQL, streaming/ML platforms | Cost-sensitive risk system |
 
-## Which Parts of the Roadmap Matter Most for Your Target Role
+## The Most Important Differentiations
 
-●●● Deep expertise required · ●●○ Strong working knowledge · ●○○ Basic understanding is enough · — Usually not required
-
-| Roadmap Layer | Data Analyst | Data Scientist | ML Engineer | AI Engineer | RAG Engineer | Agentic AI Engineer | AI Systems Engineer | MLOps |
-|---|---|---|---|---|---|---|---|---|
-| Data Analysis & Preprocessing | ●●● | ●●● | ●●○ | ●○○ | ●○○ | — | ●○○ | ●●○ |
-| Machine Learning | ●○○ | ●●● | ●●● | ●○○ | ●○○ | ●○○ | ●○○ | ●●○ |
-| Deep Learning | — | ●●○ | ●●● | ●●○ | ●○○ | ●○○ | ●○○ | ●○○ |
-| Transformers / LLMs | — | ●○○ | ●●○ | ●●● | ●●○ | ●●● | ●●○ | ●○○ |
-| RAG | — | ●○○ | ●○○ | ●●● | ●●● | ●●○ | ●●○ | ●○○ |
-| Agentic AI | — | — | ●○○ | ●●○ | ●●○ | ●●● | ●●● | ●○○ |
-| Deployment / Cloud | ●○○ | ●○○ | ●●● | ●●○ | ●●○ | ●●○ | ●●● | ●●● |
-| MLOps / LLMOps / AgentOps | ●○○ | ●○○ | ●●● | ●●○ | ●●○ | ●●○ | ●●● | ●●● |
-
-Use this table like a filter: find your target role's column, and give the sections marked ●●● the most time. Sections marked — or ●○○ are worth a working overview, not deep mastery, unless your interests pull you there anyway.
-
----
-
-# 🌳 Specialization Paths
-
-Everyone shares the same foundation. After that, the roadmap branches based on where you want to end up.
+### Data Analyst vs Data Scientist vs ML Engineer
 
 ```text
-COMMON FOUNDATION (Python, Math, Data, ML Basics)
-├── DATA PATH → SQL, Analytics, Visualization, Data Architecture
-├── MACHINE LEARNING PATH → Algorithms, Feature Engineering, Evaluation, MLOps
-├── DEEP LEARNING PATH → Neural Networks, CNN, NLP, Transformers
-├── GENERATIVE AI PATH → LLMs, Fine-Tuning, RAG, Multimodal AI
-├── AGENTIC AI PATH → Agent Design, Harness Engineering, Multi-Agent Systems
-└── PLATFORM / OPERATIONS PATH → Backend, Cloud, Docker/K8s, MLOps/LLMOps/AgentOps
+DATA ANALYST
+Question → Query → Analyze → Visualize → Recommend
+
+DATA SCIENTIST
+Question → Data → Experiment / Model → Evaluate → Explain
+
+ML ENGINEER
+Model → Software → API / Pipeline → Deploy → Monitor → Maintain
 ```
+
+### ML Engineer vs AI Engineer
+
+```text
+ML ENGINEER
+Model lifecycle + production ML
+├── training / evaluation
+├── serving
+├── pipelines
+├── monitoring
+└── reliability
+
+AI ENGINEER
+AI capability inside software products
+├── model APIs / LLMs
+├── RAG
+├── tools
+├── backend integration
+├── evaluation
+└── product behavior
+```
+
+### AI Engineer vs Generative AI Engineer vs LLM Engineer
+
+- **AI Engineer:** broad application-oriented role; may cover classical ML, vision, LLMs, RAG, agents, and APIs.
+- **Generative AI Engineer:** specializes in systems that generate content or structured outputs across one or more modalities.
+- **LLM Engineer:** deeper specialization in language-model behavior, adaptation, inference, evaluation, and sometimes training.
+
+### RAG Engineer vs Agentic AI Engineer
+
+```text
+RAG ENGINEER
+Knowledge Retrieval
+├── ingestion
+├── chunking
+├── embeddings
+├── indexing
+├── retrieval
+├── reranking
+└── retrieval / faithfulness evaluation
+
+AGENTIC AI ENGINEER
+Goal-directed Execution
+├── planning
+├── tool selection
+├── memory / state
+├── agent loop
+├── verification
+├── recovery
+├── harness
+└── multi-agent coordination
+```
+
+### AI Systems Engineer vs AI Application Engineer
+
+**Application Engineering:** turn AI capability into a usable product.
+
+**AI Systems Engineering:** make the AI runtime reliable, controllable, observable, secure, and safe when it acts.
+
+### MLOps vs LLMOps vs AgentOps
+
+```text
+MLOps    → trained-model lifecycle
+LLMOps   → LLM application lifecycle
+AgentOps → multi-step agent / trajectory lifecycle
+```
+
+MLOps is the most mature of the three. LLMOps and especially AgentOps are newer operational categories with substantial overlap with observability, evaluation, platform engineering, and SRE.
+
+## Roadmap Layer → Role Relevance
+
+**●●● = Deep expertise · ●●○ = Strong working knowledge · ●○○ = Basic awareness · — = Usually not central**
+
+| Roadmap Layer | Analyst | Data Sci. | Data Eng. | ML Eng. | AI Eng. | GenAI/LLM | RAG | Agentic | AI Systems | MLOps |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Python / Programming | ●●○ | ●●○ | ●●● | ●●● | ●●● | ●●○ | ●●○ | ●●● | ●●● | ●●● |
+| Math / Statistics | ●●○ | ●●● | ●○○ | ●●○ | ●○○ | ●●○ | ●●○ | ●●○ | ●●○ | ●●○ |
+| SQL / Data | ●●● | ●●● | ●●● | ●●○ | ●●○ | ●●○ | ●●● | ●●○ | ●●○ | ●●○ |
+| Classical ML | ●○○ | ●●● | — | ●●● | ●●○ | ●○○ | ●○○ | ●○○ | ●●○ | ●●○ |
+| Deep Learning | — | ●●○ | — | ●●● | ●●○ | ●●● | ●●○ | ●●○ | ●●● | ●○○ |
+| Transformers / LLMs | — | ●○○ | — | ●●○ | ●●● | ●●● | ●●● | ●●● | ●●● | ●●○ |
+| Fine-Tuning / PEFT | — | ●○○ | — | ●●○ | ●●○ | ●●● | ●●○ | ●●○ | ●●○ | ●○○ |
+| RAG / Retrieval | — | ●○○ | ●○○ | ●●○ | ●●● | ●●● | ●●● | ●●● | ●●● | ●●○ |
+| Agentic AI | — | — | — | ●○○ | ●●○ | ●●● | ●●○ | ●●● | ●●● | ●●○ |
+| Backend / APIs | ●○○ | ●○○ | ●●○ | ●●● | ●●● | ●●● | ●●● | ●●● | ●●● | ●●● |
+| Cloud / Deployment | ●○○ | ●○○ | ●●● | ●●● | ●●○ | ●●○ | ●●○ | ●●○ | ●●● | ●●● |
+| Operations | ●○○ | ●○○ | ●●○ | ●●● | ●●○ | ●●● | ●●● | ●●● | ●●● | ●●● |
+
+> The roadmap is a common foundation, not a requirement to master every layer equally. Your target role determines where depth is economically useful.
+
+## Career Selection Rule
+
+```text
+What work do I enjoy?
+        ↓
+What layer of the system do I want to own?
+        ↓
+What role matches that responsibility?
+        ↓
+Which roadmap layers are ●●● for that role?
+        ↓
+What project proves those competencies?
+        ↓
+Which gaps remain in current job descriptions?
+```
+
+### If You Like...
+
+| You enjoy... | Strong candidates |
+|---|---|
+| Dashboards, business questions, explaining trends | Data Analyst / BI |
+| SQL, data models, reliable datasets | Analytics Engineer / Data Engineer |
+| Statistics, experiments, prediction | Data Scientist / Applied Scientist |
+| Models + production software | ML Engineer |
+| Infrastructure, deployment, automation | MLOps / ML Platform |
+| LLMs + backend products | AI / Generative AI Engineer |
+| Retrieval, search, knowledge systems | RAG / Retrieval Engineer |
+| Fine-tuning, model behavior, inference | LLM Engineer |
+| Agents, tools, loops, memory | Agentic AI Engineer |
+| Reliability, security, observability, runtime design | AI Systems Engineer |
+| GPUs, serving, latency, throughput | AI Infrastructure / Inference Engineer |
+| New algorithms and papers | Research Engineer / Research Scientist |
+| Finance, markets, risk, statistical modeling | Financial Data Scientist / Quant |
+| Architecture, trade-offs, cloud, business constraints | AI Solutions Architect |
+
+## Domain Branch: Finance
+
+```text
+FINANCE + AI / ML
+├── Financial Data Science
+│   ├── Forecasting / Time Series
+│   ├── Risk Modeling
+│   ├── Credit Scoring
+│   └── Fraud / AML
+├── Quantitative Research
+│   ├── Signal Research
+│   ├── Statistical Modeling
+│   ├── Portfolio / Risk
+│   └── Market Microstructure
+├── Quantitative Development
+│   ├── Research Infrastructure
+│   ├── Backtesting
+│   └── High-Performance Systems
+└── Generative AI for Finance
+    ├── Document Intelligence
+    ├── Research Assistants
+    ├── RAG / Knowledge Systems
+    └── Agentic Workflows
+```
+
+Finance requires domain knowledge in addition to the AI roadmap: probability, statistics, time series, financial instruments, market microstructure, risk, and rigorous leakage-safe validation.
+
+## Career Map Principle
+
+> **Do not ask "What AI tools should I learn?" first. Ask "What system responsibility do I want to own?"**
+
+The answer determines the depth of mathematics, data engineering, model engineering, retrieval, agent design, systems engineering, cloud, and operations you actually need.
 
 ---
 
@@ -780,6 +1049,7 @@ Don't try to master the whole roadmap before building anything — alternate lea
 
 ```text
 LEARN → UNDERSTAND → IMPLEMENT → BUILD PROJECT → EVALUATE → DEPLOY → IMPROVE
+
 ```
 
 - **Phase 1:** Python → NumPy/Pandas → Visualization → Math & Statistics
@@ -799,6 +1069,7 @@ Projects are how the concepts above actually stick. A reasonable sequence:
 Python Project → Data Analysis Project → Classical ML Project → Deep Learning Project
    → CV/NLP Project → Transformer Project → LLM Application → RAG Application
    → Agentic AI Application → Production AI System → MLOps/LLMOps/AgentOps
+
 ```
 
 ---
@@ -822,7 +1093,8 @@ Python Project → Data Analysis Project → Classical ML Project → Deep Learn
 - [ ] AI Application Engineering (APIs, databases)
 - [ ] Docker · Cloud · CI/CD
 - [ ] MLOps · LLMOps · AgentOps
-- [ ] Chose a career specialization and mapped remaining gaps against it
+- [ ] Choose a career specialization and map remaining gaps against it
+- [ ] Build role-specific portfolio evidence instead of collecting tools without a target
 
 ---
 
@@ -832,10 +1104,10 @@ MIT License — Copyright (c) 2026 Dinesh. Permission is hereby granted, free of
 
 ---
 
-<div align="center">
+ <div align="center"> 
 
 ### 🧠 Learn → Build → Deploy → Evaluate → Improve
 
 **AI / ML Roadmap**
 
-</div>
+ </div>  
