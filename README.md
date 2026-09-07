@@ -1,11 +1,3 @@
-Yes — the updated roadmap should explicitly include those missing agentic concepts and career paths. Here’s a revised README with:
-
-- **Agentic AI** bullets on harnesses, open-source tools, provider/shared-responsibility, etc.
-- A new section **Agentic RAG** (integrating agents into RAG).
-- A **Careers/Roles** section listing AI/ML job titles and their focus.
-- Citations for key points (agent harness, agentic RAG, role distinctions).
-
-```markdown
 <div align="center">
 
 # 🧠 AI / ML ROADMAP
@@ -18,13 +10,12 @@ Yes — the updated roadmap should explicitly include those missing agentic conc
 
 <br>
 
-![AI](https://img.shields.io/badge/AI-Machine%20Learning-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-Fundamentals-yellow?style=for-the-badge&logo=python&logoColor=white)
-![Deep Learning](https://img.shields.io/badge/Deep-Learning-red?style=for-the-badge)
-![GenAI](https://img.shields.io/badge/Generative-AI-purple?style=for-the-badge)
-![LLM](https://img.shields.io/badge/LLMs-Transformers-orange?style=for-the-badge)
-![RAG](https://img.shields.io/badge/RAG-Retrieval-green?style=for-the-badge)
-![Agents](https://img.shields.io/badge/Agentic-AI-black?style=for-the-badge)
+
+
+
+
+
+\
 
 </div>
 
@@ -85,10 +76,10 @@ The roadmap is organized according to **conceptual dependencies**, rather than s
 
 # 🗺️ Complete Roadmap
 
-> **Legend:**\
-> 🟢 Foundation\
-> 🔵 Core\
-> 🟣 Advanced\
+> **Legend:**
+> 🟢 Foundation
+> 🔵 Core
+> 🟣 Advanced
 > 🟠 Production
 
 ---
@@ -98,49 +89,50 @@ The roadmap is organized according to **conceptual dependencies**, rather than s
 
 ### Python
 
-- Syntax
-- Variables & Data Types
-- Operators
-- Input / Output
-- Conditional Statements
-- Loops
-- Functions
-- Recursion
-- Lists
-- Tuples
-- Sets
-- Dictionaries
-- Strings
-- List / Dictionary / Set Comprehensions
-- Iterators
-- Generators
-- Lambda Functions
-- Decorators
-- Object-Oriented Programming
-  - Classes
-  - Objects
-  - Inheritance
-  - Polymorphism
-  - Encapsulation
-  - Abstraction
-- Modules & Packages
-- Exception Handling
-- File Handling
-- Virtual Environments
-- `pip`
-- Type Hints
-- Testing
-- Debugging
+* Syntax
+* Variables & Data Types
+* Operators
+* Input / Output
+* Conditional Statements
+* Loops
+* Functions
+* Recursion
+* Lists
+* Tuples
+* Sets
+* Dictionaries
+* Strings
+* List / Dictionary / Set Comprehensions
+* Iterators
+* Generators
+* Lambda Functions
+* Decorators
+* Object-Oriented Programming
+
+  * Classes
+  * Objects
+  * Inheritance
+  * Polymorphism
+  * Encapsulation
+  * Abstraction
+* Modules & Packages
+* Exception Handling
+* File Handling
+* Virtual Environments
+* `pip`
+* Type Hints
+* Testing
+* Debugging
 
 ### Development Tools
 
-- Git
-- GitHub
-- Branching
-- Merging
-- Pull Requests
-- Version Control
-- Basic Linux / Terminal
+* Git
+* GitHub
+* Branching
+* Merging
+* Pull Requests
+* Version Control
+* Basic Linux / Terminal
 
 </details>
 
@@ -151,64 +143,64 @@ The roadmap is organized according to **conceptual dependencies**, rather than s
 
 ### Linear Algebra
 
-- Scalars
-- Vectors
-- Matrices
-- Matrix Operations
-- Dot Product
-- Norms
-- Linear Transformations
-- Eigenvalues
-- Eigenvectors
-- Matrix Decomposition
-- Singular Value Decomposition — SVD
+* Scalars
+* Vectors
+* Matrices
+* Matrix Operations
+* Dot Product
+* Norms
+* Linear Transformations
+* Eigenvalues
+* Eigenvectors
+* Matrix Decomposition
+* Singular Value Decomposition — SVD
 
 ### Calculus
 
-- Functions
-- Limits
-- Derivatives
-- Partial Derivatives
-- Gradients
-- Chain Rule
-- Integrals
-- Optimization
+* Functions
+* Limits
+* Derivatives
+* Partial Derivatives
+* Gradients
+* Chain Rule
+* Integrals
+* Optimization
 
 ### Probability
 
-- Random Variables
-- Conditional Probability
-- Bayes' Theorem
-- Expectation
-- Variance
-- Covariance
-- Probability Distributions
+* Random Variables
+* Conditional Probability
+* Bayes' Theorem
+* Expectation
+* Variance
+* Covariance
+* Probability Distributions
 
 ### Statistics
 
-- Mean
-- Median
-- Mode
-- Variance
-- Standard Deviation
-- Sampling
-- Confidence Intervals
-- Hypothesis Testing
-- Correlation
+* Mean
+* Median
+* Mode
+* Variance
+* Standard Deviation
+* Sampling
+* Confidence Intervals
+* Hypothesis Testing
+* Correlation
 
 ### Optimization
 
-- Objective Functions
-- Loss Functions
-- Gradient Descent
-- Learning Rate
-- Convexity Basics
+* Objective Functions
+* Loss Functions
+* Gradient Descent
+* Learning Rate
+* Convexity Basics
 
 ### Information Theory
 
-- Entropy
-- Cross-Entropy
-- KL Divergence
+* Entropy
+* Cross-Entropy
+* KL Divergence
 
 </details>
 
@@ -231,14 +223,14 @@ The roadmap is organized according to **conceptual dependencies**, rather than s
 
 ### Learn
 
-- Arrays
-- DataFrames
-- Series
-- Data manipulation
-- Visualization
-- Statistical analysis
-- Scientific computing
-- ML pipelines
+* Arrays
+* DataFrames
+* Series
+* Data manipulation
+* Visualization
+* Statistical analysis
+* Scientific computing
+* ML pipelines
 
 </details>
 
@@ -251,35 +243,35 @@ Before training a model, learn how to work with data.
 
 ### Data Preparation
 
-- Data Collection
-- Data Cleaning
-- Exploratory Data Analysis — EDA
-- Missing Values
-- Duplicate Data
-- Outlier Detection
-- Categorical Variables
-- Encoding
-- Feature Scaling
-- Normalization
-- Standardization
+* Data Collection
+* Data Cleaning
+* Exploratory Data Analysis — EDA
+* Missing Values
+* Duplicate Data
+* Outlier Detection
+* Categorical Variables
+* Encoding
+* Feature Scaling
+* Normalization
+* Standardization
 
 ### Feature Engineering
 
-- Feature Creation
-- Feature Transformation
-- Feature Selection
-- Dimensionality Reduction
+* Feature Creation
+* Feature Transformation
+* Feature Selection
+* Dimensionality Reduction
 
 ### Dataset Management
 
-- Training Set
-- Validation Set
-- Test Set
-- Cross-Validation
-- Data Leakage
-- Class Imbalance
-- Data Augmentation
-- Reproducibility
+* Training Set
+* Validation Set
+* Test Set
+* Cross-Validation
+* Data Leakage
+* Class Imbalance
+* Data Augmentation
+* Reproducibility
 
 </details>
 
@@ -294,22 +286,22 @@ Learning from labeled data.
 
 ### Regression
 
-- Linear Regression
-- Polynomial Regression
-- Regularization
+* Linear Regression
+* Polynomial Regression
+* Regularization
 
 ### Classification
 
-- Logistic Regression
-- K-Nearest Neighbors — KNN
-- Naive Bayes
-- Decision Trees
-- Random Forest
-- Support Vector Machines — SVM
-- Gradient Boosting
-- XGBoost
-- LightGBM
-- CatBoost
+* Logistic Regression
+* K-Nearest Neighbors — KNN
+* Naive Bayes
+* Decision Trees
+* Random Forest
+* Support Vector Machines — SVM
+* Gradient Boosting
+* XGBoost
+* LightGBM
+* CatBoost
 
 ---
 
@@ -319,19 +311,19 @@ Learning patterns from unlabeled data.
 
 ### Clustering
 
-- K-Means
-- Hierarchical Clustering
-- DBSCAN
-- Gaussian Mixture Models
+* K-Means
+* Hierarchical Clustering
+* DBSCAN
+* Gaussian Mixture Models
 
 ### Dimensionality Reduction
 
-- PCA
-- Other Dimensionality Reduction Methods
+* PCA
+* Other Dimensionality Reduction Methods
 
 ### Other
 
-- Anomaly Detection
+* Anomaly Detection
 
 ---
 
@@ -357,25 +349,25 @@ Learning through interaction with an environment.
 
 ### Concepts
 
-- Agent
-- Environment
-- State
-- Action
-- Reward
-- Policy
-- Value Function
-- Q-Function
-- Markov Decision Process
-- Exploration vs Exploitation
+* Agent
+* Environment
+* State
+* Action
+* Reward
+* Policy
+* Value Function
+* Q-Function
+* Markov Decision Process
+* Exploration vs Exploitation
 
 ### Algorithms
 
-- Q-Learning
-- SARSA
-- DQN
-- Policy Gradient
-- Actor-Critic
-- PPO
+* Q-Learning
+* SARSA
+* DQN
+* Policy Gradient
+* Actor-Critic
+* PPO
 
 </details>
 
@@ -388,36 +380,36 @@ Learning through interaction with an environment.
 
 #### Classification
 
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC
-- PR-AUC
-- Confusion Matrix
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* ROC-AUC
+* PR-AUC
+* Confusion Matrix
 
 #### Regression
 
-- MAE
-- MSE
-- RMSE
-- R²
+* MAE
+* MSE
+* RMSE
+* R²
 
 ### Model Optimization
 
-- Cross-Validation
-- Hyperparameter Tuning
-- Grid Search
-- Random Search
-- Bayesian Optimization
+* Cross-Validation
+* Hyperparameter Tuning
+* Grid Search
+* Random Search
+* Bayesian Optimization
 
 ### Engineering
 
-- Scikit-learn Pipelines
-- Model Serialization
-- Experiment Tracking
-- Reproducibility
-- Model Comparison
+* Scikit-learn Pipelines
+* Model Serialization
+* Experiment Tracking
+* Reproducibility
+* Model Comparison
 
 </details>
 
@@ -428,56 +420,56 @@ Learning through interaction with an environment.
 
 ### Neural Networks
 
-- Artificial Neurons
-- Perceptron
-- MLP
-- Layers
-- Weights
-- Bias
-- Parameters
+* Artificial Neurons
+* Perceptron
+* MLP
+* Layers
+* Weights
+* Bias
+* Parameters
 
 ### Training
 
-- Forward Propagation
-- Backpropagation
-- Computational Graphs
-- Loss Functions
-- Activation Functions
+* Forward Propagation
+* Backpropagation
+* Computational Graphs
+* Loss Functions
+* Activation Functions
 
 ### Activation Functions
 
-- ReLU
-- Sigmoid
-- Tanh
-- Softmax
+* ReLU
+* Sigmoid
+* Tanh
+* Softmax
 
 ### Optimizers
 
-- SGD
-- Momentum
-- Adam
-- AdamW
+* SGD
+* Momentum
+* Adam
+* AdamW
 
 ### Regularization
 
-- Dropout
-- Batch Normalization
-- Layer Normalization
-- Weight Initialization
-- Learning Rate Scheduling
+* Dropout
+* Batch Normalization
+* Layer Normalization
+* Weight Initialization
+* Learning Rate Scheduling
 
 ### Common Problems
 
-- Overfitting
-- Underfitting
-- Vanishing Gradients
-- Exploding Gradients
+* Overfitting
+* Underfitting
+* Vanishing Gradients
+* Exploding Gradients
 
 ### Frameworks
 
-- PyTorch
-- TensorFlow
-- Keras
+* PyTorch
+* TensorFlow
+* Keras
 
 </details>
 
@@ -488,38 +480,38 @@ Learning through interaction with an environment.
 
 ### Foundations
 
-- Images as Tensors
-- Image Representation
-- Image Preprocessing
-- Image Augmentation
-- OpenCV
+* Images as Tensors
+* Image Representation
+* Image Preprocessing
+* Image Augmentation
+* OpenCV
 
 ### CNN
 
-- Convolution
-- Kernels
-- Filters
-- Feature Maps
-- Pooling
-- Stride
-- Padding
+* Convolution
+* Kernels
+* Filters
+* Feature Maps
+* Pooling
+* Stride
+* Padding
 
 ### Tasks
 
-- Image Classification
-- Transfer Learning
-- Object Detection
-- Image Segmentation
-- Semantic Segmentation
-- Instance Segmentation
-- OCR
+* Image Classification
+* Transfer Learning
+* Object Detection
+* Image Segmentation
+* Semantic Segmentation
+* Instance Segmentation
+* OCR
 
 ### Modern Vision
 
-- YOLO
-- Vision Transformers
-- Image Embeddings
-- Vision-Language Models
+* YOLO
+* Vision Transformers
+* Image Embeddings
+* Vision-Language Models
 
 </details>
 
@@ -530,16 +522,16 @@ Learning through interaction with an environment.
 
 Neural architectures designed for sequential data.
 
-- Sequential Data
-- RNN
-- LSTM
-- GRU
-- Bidirectional RNN
-- Seq2Seq
-- Encoder-Decoder
-- Attention
-- Teacher Forcing
-- Sequence Generation
+* Sequential Data
+* RNN
+* LSTM
+* GRU
+* Bidirectional RNN
+* Seq2Seq
+* Encoder-Decoder
+* Attention
+* Teacher Forcing
+* Sequence Generation
 
 > RNNs/LSTMs are important historically and conceptually, while Transformers dominate many modern NLP and multimodal applications.
 
@@ -552,33 +544,33 @@ Neural architectures designed for sequential data.
 
 ### Text Processing
 
-- Text Cleaning
-- Tokenization
-- Stop Words
-- Stemming
-- Lemmatization
-- N-Grams
+* Text Cleaning
+* Tokenization
+* Stop Words
+* Stemming
+* Lemmatization
+* N-Grams
 
 ### Classical NLP
 
-- Bag of Words
-- TF-IDF
+* Bag of Words
+* TF-IDF
 
 ### Word Representations
 
-- Word2Vec
-- GloVe
-- FastText
-- Word Embeddings
+* Word2Vec
+* GloVe
+* FastText
+* Word Embeddings
 
 ### NLP Tasks
 
-- Text Classification
-- Sentiment Analysis
-- Named Entity Recognition — NER
-- POS Tagging
-- Language Modeling
-- Text Generation
+* Text Classification
+* Sentiment Analysis
+* Named Entity Recognition — NER
+* POS Tagging
+* Language Modeling
+* Text Generation
 
 </details>
 
@@ -591,31 +583,31 @@ Transformers are the foundation of most modern LLM systems.
 
 ### Attention
 
-- Query
-- Key
-- Value
-- Scaled Dot-Product Attention
-- Self-Attention
-- Multi-Head Attention
+* Query
+* Key
+* Value
+* Scaled Dot-Product Attention
+* Self-Attention
+* Multi-Head Attention
 
 ### Architecture
 
-- Positional Encoding
-- Positional Embeddings
-- Feed-Forward Networks
-- Residual Connections
-- Layer Normalization
-- Encoder
-- Decoder
-- Encoder-Decoder Architecture
-- Masked Attention
-- Causal Attention
+* Positional Encoding
+* Positional Embeddings
+* Feed-Forward Networks
+* Residual Connections
+* Layer Normalization
+* Encoder
+* Decoder
+* Encoder-Decoder Architecture
+* Masked Attention
+* Causal Attention
 
 ### Important Architectures
 
-- BERT
-- GPT
-- T5
+* BERT
+* GPT
+* T5
 
 </details>
 
@@ -628,19 +620,19 @@ AI systems capable of generating new content.
 
 ### Generative Models
 
-- Autoencoders
-- Variational Autoencoders — VAE
-- GANs
-- Diffusion Models
-- Foundation Models
+* Autoencoders
+* Variational Autoencoders — VAE
+* GANs
+* Diffusion Models
+* Foundation Models
 
 ### Modalities
 
-- Text Generation
-- Image Generation
-- Audio Generation
-- Video Generation
-- Multimodal Generation
+* Text Generation
+* Image Generation
+* Audio Generation
+* Video Generation
+* Multimodal Generation
 
 </details>
 
@@ -651,46 +643,46 @@ AI systems capable of generating new content.
 
 ### LLM Fundamentals
 
-- LLM Architecture
-- Transformer Architecture
-- Foundation Models
-- Pretraining
-- Self-Supervised Learning
-- Next-Token Prediction
+* LLM Architecture
+* Transformer Architecture
+* Foundation Models
+* Pretraining
+* Self-Supervised Learning
+* Next-Token Prediction
 
 ### Data
 
-- Dataset Preparation
-- Data Filtering
-- Data Quality
-- Tokenization
-- Vocabulary
-- Tokens
+* Dataset Preparation
+* Data Filtering
+* Data Quality
+* Tokenization
+* Vocabulary
+* Tokens
 
 ### Model Internals
 
-- Embeddings
-- Parameters
-- Weights
-- Logits
-- Softmax
-- Attention
-- Context Window
+* Embeddings
+* Parameters
+* Weights
+* Logits
+* Softmax
+* Attention
+* Context Window
 
 ### Scaling
 
-- Model Size
-- Scaling Laws
-- Compute
-- Training Data
+* Model Size
+* Scaling Laws
+* Compute
+* Training Data
 
 ### Inference
 
-- Prompt → Tokens
-- Tokens → Logits
-- Logits → Probabilities
-- Probability → Next Token
-- Repeated Generation → Output
+* Prompt → Tokens
+* Tokens → Logits
+* Logits → Probabilities
+* Probability → Next Token
+* Repeated Generation → Output
 
 </details>
 
@@ -703,25 +695,25 @@ Understanding how an LLM generates output.
 
 ### Decoding
 
-- Greedy Decoding
-- Sampling
-- Temperature
-- Top-K
-- Top-P / Nucleus Sampling
-- Beam Search
-- Repetition Penalty
-- Stop Tokens
+* Greedy Decoding
+* Sampling
+* Temperature
+* Top-K
+* Top-P / Nucleus Sampling
+* Beam Search
+* Repetition Penalty
+* Stop Tokens
 
 ### Inference Engineering
 
-- Context Management
-- KV Cache
-- Batching
-- Streaming
-- Quantization
-- Inference Optimization
-- Latency
-- Throughput
+* Context Management
+* KV Cache
+* Batching
+* Streaming
+* Quantization
+* Inference Optimization
+* Latency
+* Throughput
 
 </details>
 
@@ -732,31 +724,31 @@ Understanding how an LLM generates output.
 
 ### Prompt Engineering
 
-- Zero-Shot Prompting
-- Few-Shot Prompting
-- System Prompts
-- Structured Outputs
-- Prompt Templates
+* Zero-Shot Prompting
+* Few-Shot Prompting
+* System Prompts
+* Structured Outputs
+* Prompt Templates
 
 ### Fine-Tuning
 
-- Fine-Tuning
-- Instruction Tuning
-- Supervised Fine-Tuning — SFT
-- Preference Optimization
-- RLHF
-- DPO
+* Fine-Tuning
+* Instruction Tuning
+* Supervised Fine-Tuning — SFT
+* Preference Optimization
+* RLHF
+* DPO
 
 ### Parameter-Efficient Fine-Tuning
 
-- PEFT
-- LoRA
-- QLoRA
+* PEFT
+* LoRA
+* QLoRA
 
 ### Model Optimization
 
-- Quantization
-- Distillation
+* Quantization
+* Distillation
 
 ### Key Decision
 
@@ -794,27 +786,27 @@ Need different model behavior? │
 
 ### Embeddings
 
-- Text Embeddings
-- Image Embeddings
-- Multimodal Embeddings
-- Vector Representations
-- Semantic Similarity
-- Cosine Similarity
+* Text Embeddings
+* Image Embeddings
+* Multimodal Embeddings
+* Vector Representations
+* Semantic Similarity
+* Cosine Similarity
 
 ### Vector Search
 
-- Vector Indexing
-- Similarity Search
-- Approximate Nearest Neighbor Search
-- Metadata Filtering
+* Vector Indexing
+* Similarity Search
+* Approximate Nearest Neighbor Search
+* Metadata Filtering
 
 ### Vector Databases / Systems
 
-- FAISS
-- Chroma
-- Pinecone
-- Weaviate
-- Milvus
+* FAISS
+* Chroma
+* Pinecone
+* Weaviate
+* Milvus
 
 </details>
 
@@ -858,39 +850,39 @@ Answer
 
 ### Core Components
 
-- Document Loading
-- Document Parsing
-- Chunking
-- Chunk Size
-- Chunk Overlap
-- Embedding
-- Indexing
-- Retrieval
-- Context Construction
-- Generation
-- Reranking
+* Document Loading
+* Document Parsing
+* Chunking
+* Chunk Size
+* Chunk Overlap
+* Embedding
+* Indexing
+* Retrieval
+* Context Construction
+* Generation
+* Reranking
 
 ### Advanced Retrieval
 
-- Hybrid Search
-- Keyword Search + Vector Search
-- Metadata Filtering
-- Query Expansion
-- Query Rewriting
-- Multi-Query Retrieval
-- Parent-Child Retrieval
-- Corrective RAG
-- **Agentic RAG** — uses AI agents to orchestrate retrieval processes, making RAG more dynamic and adaptive to complex tasks.
-- Graph RAG
+* Hybrid Search
+* Keyword Search + Vector Search
+* Metadata Filtering
+* Query Expansion
+* Query Rewriting
+* Multi-Query Retrieval
+* Parent-Child Retrieval
+* Corrective RAG
+* Agentic RAG
+* Graph RAG
 
 ### Evaluation
 
-- Retrieval Evaluation
-- Generation Evaluation
-- Context Relevance
-- Answer Relevance
-- Faithfulness
-- Hallucination Analysis
+* Retrieval Evaluation
+* Generation Evaluation
+* Context Relevance
+* Answer Relevance
+* Faithfulness
+* Hallucination Analysis
 
 </details>
 
@@ -903,20 +895,20 @@ AI systems working across multiple modalities.
 
 ### Modalities
 
-- Text
-- Images
-- Audio
-- Video
+* Text
+* Images
+* Audio
+* Video
 
 ### Technologies
 
-- Vision-Language Models
-- Image Understanding
-- Speech-to-Text
-- Text-to-Speech
-- Audio Understanding
-- Multimodal Embeddings
-- Multimodal LLMs
+* Vision-Language Models
+* Image Understanding
+* Speech-to-Text
+* Text-to-Speech
+* Audio Understanding
+* Multimodal Embeddings
+* Multimodal LLMs
 
 ```text
               Multimodal AI
@@ -963,35 +955,37 @@ An AI agent combines models with reasoning, tools, state, memory, and actions to
 
 ### Core Concepts
 
-- **Harness**: Everything built around the model (prompts, tools, context policies, loops) that transforms a raw model into a full agent.
-- **Agent**: An autonomous LLM (with tools/calls) acting toward a goal.
-- **Environment**: External system state the agent perceives.
-- **State**: The agent's internal memory or knowledge at a given time.
-- **Action**: External tool calls or decisions made by the agent.
-- **Policy**: The agent's strategy (implicitly via its prompt/weights).
-- **Memory**: Short- or long-term memory modules (e.g. vector store, files).
-- **Tool Calling**: Using function/ API calls (web search, code execution, etc).
-- **Planning & Reasoning**: Breaking goals into steps; reasoning over context.
-- **Feedback Loop**: The iterate-observe-act cycle itself.
-- **Open-Source Agent Frameworks**: Many tools (LangChain, AutoGen, LlamaIndex, etc.) are open-source harnesses enabling agent workflows.
+* Agent
+* Agent Loop
+* Perception
+* Reasoning
+* Planning
+* Action
+* Tool Calling
+* Function Calling
+* Tool Selection
+* Memory
+* Short-Term Memory
+* Long-Term Memory
+* Reflection
+* Replanning
+* ReAct
 
 ### Agent Types
 
-- **Workflow Agent**: Orchestrates predefined tasks (e.g. email automation).
-- **Planning Agent**: Breaks tasks into substeps with a planner/executor pair.
-- **Autonomous Agent**: Self-driven goal completion (e.g. AutoGPT).
-- **Multi-Agent System**: Several agents collaborating (e.g. separate roles or competition).
+* Workflow Agents
+* Planning Agents
+* Autonomous Agents
+* Multi-Agent Systems
 
 ### Production Concepts
 
-- **Harness Engineering**: Continuously refining the agent’s harness (context, rules, tools) to prevent failures. Every agent mistake is turned into an explicit rule or test.
-- **Human-in-the-Loop**: Involving humans for oversight, labeling, or guidance (especially in safety/verification).
-- **State Management**: Mechanisms for saving/loading agent memory and context (e.g. databases, file system).
-- **Tool/Function Schema**: Defining APIs and interfaces the agent can call.
-- **Testing & Evaluation**: Verifying agent behavior with test cases or evaluation harnesses.
-- **Safety & Guardrails**: Filters, reviewers, or "watcher" agents to catch unsafe or incorrect actions.
-- **Provider vs Enterprise Responsibilities**: In deployed agents, the model provider (e.g. OpenAI, Anthropic) handles the underlying model and runtime; the enterprise owns the deployment-specific config, goals, and data.
-- **ReAct Loops**: Chains of reasoning + tool actions (ReAct, ReAct+CoT, etc).
+* Agent Orchestration
+* Human-in-the-Loop
+* Agent Evaluation
+* Agent Safety
+* State Management
+* Tool Permissions
 
 </details>
 
@@ -1000,22 +994,25 @@ An AI agent combines models with reasoning, tools, state, memory, and actions to
 <details>
 <summary><h2>🟣 20 — Agent Frameworks</h2></summary>
 
-### Frameworks (Open-Source Tools)
+### Frameworks
 
-- **LangChain** – Framework for connecting LLMs with tools (search, DBs, APIs).
-- **LlamaIndex (GPT Index)** – Library for ingestion and querying custom data with LLMs.
-- **AutoGen** – Framework for building multi-agent workflows.
-- **CrewAI** – Tool for multi-agent collaboration on tasks.
-- **Hugging Face Agents** – (Beta) multi-agent orchestration via Hugging Face.
+* LangChain
+* LangGraph
+* LlamaIndex
+* AutoGen
+* CrewAI
+* Hugging Face Agents
 
 ### Important Concepts
 
-- **Tool Abstractions**: Designing clear tool interfaces and schemas for the agent.
-- **Provider Abstractions**: Defining which LLM or API the agent uses at each step.
-- **Memory / Indexing**: Using vector or file-based memories to persist context.
-- **Execution Graphs**: Visualizing agent steps and tool calls.
-- **Agent Orchestration**: Managing multiple agents (workers, supervisors).
-- **Observability**: Logs/traces for agent actions.
+* Tool Abstractions
+* Provider Abstractions
+* Agent State
+* Graph-Based Workflows
+* Execution Graphs
+* Memory
+* Tool Registry
+* Agent Orchestration
 
 </details>
 
@@ -1028,31 +1025,31 @@ Once models and agents are understood, learn how to build actual applications ar
 
 ### Backend
 
-- APIs
-- REST
-- HTTP
-- JSON
-- FastAPI
-- Authentication
-- Authorization
+* APIs
+* REST
+* HTTP
+* JSON
+* FastAPI
+* Authentication
+* Authorization
 
 ### Databases
 
-- PostgreSQL
-- Redis
-- SQL
-- Caching
+* PostgreSQL
+* Redis
+* SQL
+* Caching
 
 ### Application Architecture
 
-- Async Programming
-- WebSockets
-- Background Jobs
-- Queues
-- Frontend Integration
-- Error Handling
-- Rate Limiting
-- Secrets Management
+* Async Programming
+* WebSockets
+* Background Jobs
+* Queues
+* Frontend Integration
+* Error Handling
+* Rate Limiting
+* Secrets Management
 
 ### Typical AI Application
 
@@ -1082,57 +1079,57 @@ API / Backend
 
 ### Linux
 
-- Shell
-- Processes
-- Environment Variables
-- Permissions
-- Networking Basics
+* Shell
+* Processes
+* Environment Variables
+* Permissions
+* Networking Basics
 
 ### Docker
 
-- Containers
-- Dockerfiles
-- Images
-- Volumes
-- Networks
-- Docker Compose
-- Container Registries
+* Containers
+* Dockerfiles
+* Images
+* Volumes
+* Networks
+* Docker Compose
+* Container Registries
 
 ### Kubernetes
 
-- Pods
-- Deployments
-- Services
-- ConfigMaps
-- Secrets
-- Scaling
+* Pods
+* Deployments
+* Services
+* ConfigMaps
+* Secrets
+* Scaling
 
 ### Cloud
 
 Learn at least one major cloud platform deeply.
 
-- AWS
-- Azure
-- Google Cloud
+* AWS
+* Azure
+* Google Cloud
 
 ### Cloud Fundamentals
 
-- Compute
-- Storage
-- Networking
-- IAM
-- Load Balancing
-- Autoscaling
-- Monitoring
+* Compute
+* Storage
+* Networking
+* IAM
+* Load Balancing
+* Autoscaling
+* Monitoring
 
 ### AI Deployment
 
-- GPU Deployment
-- Model Serving
-- Inference Servers
-- Serverless
-- Batch Inference
-- Real-Time Inference
+* GPU Deployment
+* Model Serving
+* Inference Servers
+* Serverless
+* Batch Inference
+* Real-Time Inference
 
 </details>
 
@@ -1165,40 +1162,40 @@ Retraining
 
 ### Core Topics
 
-- ML Lifecycle
-- Dataset Management
-- Data Versioning
-- Model Versioning
-- Experiment Tracking
-- Model Registry
-- Training Pipelines
-- Feature Stores
-- Reproducibility
+* ML Lifecycle
+* Dataset Management
+* Data Versioning
+* Model Versioning
+* Experiment Tracking
+* Model Registry
+* Training Pipelines
+* Feature Stores
+* Reproducibility
 
 ### Tools
 
-- MLflow
-- DVC
+* MLflow
+* DVC
 
 ### CI/CD
 
-- Automated Testing
-- Build Pipelines
-- Deployment Pipelines
-- Continuous Integration
-- Continuous Delivery
+* Automated Testing
+* Build Pipelines
+* Deployment Pipelines
+* Continuous Integration
+* Continuous Delivery
 
 ### Monitoring
 
-- Logging
-- Metrics
-- Data Drift
-- Concept Drift
-- Model Performance
-- Latency
-- Throughput
-- Resource Usage
-- Observability
+* Logging
+* Metrics
+* Data Drift
+* Concept Drift
+* Model Performance
+* Latency
+* Throughput
+* Resource Usage
+* Observability
 
 </details>
 
@@ -1211,35 +1208,35 @@ LLMOps extends production engineering concepts to LLM-based applications.
 
 ### Evaluation
 
-- LLM Evaluation
-- RAG Evaluation
-- Agent Evaluation
-- Prompt Evaluation
-- Human Evaluation
-- Automated Evaluation
+* LLM Evaluation
+* RAG Evaluation
+* Agent Evaluation
+* Prompt Evaluation
+* Human Evaluation
+* Automated Evaluation
 
 ### Observability
 
-- Tracing
-- Token Monitoring
-- Cost Monitoring
-- Latency Monitoring
-- Throughput
-- Error Monitoring
+* Tracing
+* Token Monitoring
+* Cost Monitoring
+* Latency Monitoring
+* Throughput
+* Error Monitoring
 
 ### Production
 
-- Prompt Versioning
-- Model Versioning
-- Model Routing
-- Fallback Models
-- Caching
-- Guardrails
-- Safety
-- Hallucination Detection
-- Feedback Loops
-- Continuous Evaluation
-- Production Monitoring
+* Prompt Versioning
+* Model Versioning
+* Model Routing
+* Fallback Models
+* Caching
+* Guardrails
+* Safety
+* Hallucination Detection
+* Feedback Loops
+* Continuous Evaluation
+* Production Monitoring
 
 </details>
 
@@ -1362,11 +1359,13 @@ LLMOps extends production engineering concepts to LLM-based applications.
 
 ### Machine Learning vs Deep Learning
 
-**Machine Learning**  
-Traditional algorithms learn patterns from engineered or structured features. For example, linear regression, random forests, SVMs.
+**Machine Learning**
 
-**Deep Learning**  
-Neural networks automatically learn hierarchical representations directly from data. For example, CNNs for images, transformers for text.
+Traditional algorithms learn patterns from engineered or structured features.
+
+**Deep Learning**
+
+Neural networks learn increasingly useful representations directly from data.
 
 ---
 
@@ -1378,7 +1377,7 @@ Neural networks automatically learn hierarchical representations directly from d
 | Unsupervised  | Unlabeled data       | Clustering         |
 | Reinforcement | Experience + rewards | Game-playing agent |
 
-> **Note:** Reinforcement Learning still relies on data – the agent collects experience (states, actions, rewards) via interaction, rather than starting with a labeled dataset.
+> Reinforcement Learning does **not** mean "no data". The agent generates and learns from experience.
 
 ---
 
@@ -1386,10 +1385,10 @@ Neural networks automatically learn hierarchical representations directly from d
 
 | Architecture | Main Strength                     |
 | ------------ | --------------------------------- |
-| CNN          | Spatial pattern recognition (images) |
-| RNN          | Modeling sequential data (short-term) |
-| LSTM / GRU   | Capturing longer-range sequences   |
-| Transformer  | Flexible attention-based modeling of sequences |
+| CNN          | Spatial patterns                  |
+| RNN          | Sequential dependencies           |
+| LSTM / GRU   | Longer sequence dependencies      |
+| Transformer  | Attention-based sequence modeling |
 
 ---
 
@@ -1413,8 +1412,11 @@ Neural networks automatically learn hierarchical representations directly from d
 
 ### RAG vs Agents
 
-- **RAG** (Retrieval-Augmented Generation) is a retrieval architecture. It fetches relevant documents (via vector search) and feeds them to an LLM for grounded answers.
-- **Agents** are systems that autonomously decide actions/tools in a loop. An agent can **use RAG** as one of its tools (e.g. retrieving context from a database during reasoning).
+**RAG** is primarily a retrieval architecture.
+
+**Agents** are systems that can decide what actions/tools to use.
+
+An agent can use RAG as one of its tools.
 
 ---
 
@@ -1441,7 +1443,7 @@ Application
   └── Deployment
 ```
 
-A model is just one component. A real AI application includes data, integrations, UIs, and ops.
+A model is only one component of a production AI system.
 
 ---
 
@@ -1457,25 +1459,27 @@ A model is just one component. A real AI application includes data, integrations
 | Deep Learning       | PyTorch                          |
 | Computer Vision     | OpenCV, YOLO                     |
 | NLP                 | Transformers                     |
-| LLMs                | Hugging Face, Llama, Bloom       |
-| Agent Frameworks    | LangChain, LlamaIndex, AutoGen   |
-| RAG                 | FAISS, Chroma, Pinecone          |
-| Backend             | FastAPI, Flask                   |
+| LLMs                | Hugging Face                     |
+| LLM Applications    | LangChain, LangGraph, LlamaIndex |
+| RAG                 | FAISS, Chroma, Vector DBs        |
+| Backend             | FastAPI                          |
 | Database            | PostgreSQL, Redis                |
 | Containers          | Docker                           |
 | Cloud               | AWS / Azure / GCP                |
 | MLOps               | MLflow, DVC                      |
 | Version Control     | Git + GitHub                     |
 
-> The goal is **not** to learn every tool listed here. Learn the concepts first, then pick tools as needed.
+> The goal is **not** to learn every tool listed here. Learn the underlying concepts first, then select tools according to the project.
 
 ---
 
 # 🎯 Recommended Learning Strategy
 
-Do not attempt to master the entire roadmap before building anything. Instead:
+Do not attempt to master the entire roadmap sequentially before building anything.
 
-```
+Use this cycle:
+
+```text
 LEARN
   ↓
 UNDERSTAND
@@ -1492,7 +1496,8 @@ IMPROVE
 ```
 
 ### Phase 1
-```
+
+```text
 Python
    ↓
 NumPy / Pandas
@@ -1503,7 +1508,8 @@ Mathematics & Statistics
 ```
 
 ### Phase 2
-```
+
+```text
 Data Preprocessing
    ↓
 Supervised ML
@@ -1514,7 +1520,8 @@ Model Evaluation
 ```
 
 ### Phase 3
-```
+
+```text
 Neural Networks
    ↓
 Backpropagation
@@ -1527,7 +1534,8 @@ RNN / LSTM
 ```
 
 ### Phase 4
-```
+
+```text
 NLP
    ↓
 Attention
@@ -1538,7 +1546,8 @@ BERT / GPT Concepts
 ```
 
 ### Phase 5
-```
+
+```text
 Generative AI
    ↓
 LLMs
@@ -1551,7 +1560,8 @@ Fine-Tuning
 ```
 
 ### Phase 6
-```
+
+```text
 Embeddings
    ↓
 Vector Search
@@ -1560,11 +1570,12 @@ RAG
    ↓
 Advanced RAG
    ↓
-Agentic RAG
+RAG Evaluation
 ```
 
 ### Phase 7
-```
+
+```text
 Tool Calling
    ↓
 Agent Loops
@@ -1573,14 +1584,15 @@ Memory
    ↓
 Planning
    ↓
-Agent Frameworks (LangChain, etc.)
+LangGraph / Agent Frameworks
    ↓
 Multi-Agent Systems
 ```
 
 ### Phase 8
-```
-AI Application (APIs, UI)
+
+```text
+FastAPI
    ↓
 Databases
    ↓
@@ -1597,20 +1609,31 @@ LLMOps
 
 ---
 
-# 📚 What “Good Enough” Looks Like
+# 📚 What "Good Enough" Looks Like
 
-You do **not** need to know every topic at deep levels.
+You do **not** need to know every topic at the same depth.
 
-- **Foundation**: You should be able to write basic code, explain key math and ML ideas.
-- **Core**: Understand model assumptions, design simple systems, and reason about trade-offs.
-- **Advanced**: Read papers, implement novel ideas, and combine techniques (e.g., implementing a new agent workflow).
-- **Production**: Deploy models, setup monitoring, and ensure reliability.
+### Foundation
+
+You should be able to explain and implement the fundamentals.
+
+### Core
+
+You should understand the mathematics, architecture, assumptions, strengths, and limitations.
+
+### Advanced
+
+You should be able to read papers, implement techniques, compare approaches, and build projects.
+
+### Production
+
+You should be able to deploy, monitor, debug, evaluate, and maintain systems.
 
 ---
 
 # 🚀 Project Progression
 
-A strong learning roadmap should turn into projects:
+A strong learning roadmap should eventually turn into projects.
 
 ```text
 Python Project
@@ -1691,10 +1714,10 @@ MLOps / LLMOps
                 Agentic AI
                      │
                      ▼
-            AI Application Engineering
+            AI Engineering
                      │
                      ▼
-             Cloud / Deployment
+             Cloud / DevOps
                      │
                      ▼
                   MLOps
@@ -1731,60 +1754,41 @@ Understanding this hierarchy makes it much easier to move between frameworks, mo
 
 ---
 
-# 🧑‍💼 Roles & Career Paths
-
-AI/ML skills lead to many roles. Key examples include:
-
-- **Data Analyst** – Transforms raw data into actionable insights and reports. (Focus on SQL, BI tools, visualization).
-- **Data Engineer / Architect** – Builds and maintains data infrastructure (ETL pipelines, data warehouses). Expertise in databases and systems to prepare data.
-- **Data Scientist** – Analyzes data to extract patterns and build predictive models.
-- **Machine Learning Engineer** – Turns models into scalable production systems (deploying, monitoring, and automating models).
-- **AI / Generative AI Engineer** – Builds end-to-end AI products (LLMs, RAG, agents) and integrates them with software and APIs.
-- **RAG / Retrieval Engineer** – Specializes in search and vector databases, designing pipelines to supply knowledge to LLMs.
-- **Agentic AI Engineer** – Designs and builds autonomous agents and multi-agent systems (using harness engineering, planning, memory).
-- **MLOps Engineer** – Focuses on ML deployment pipelines, CI/CD, monitoring, and model lifecycle management.
-- **AI Systems Engineer / Architect** – Bridges AI and infrastructure, ensuring systems are reliable, scalable and efficient.
-- **Domain Specialist (e.g., Finance, Healthcare)** – Applies AI/ML in a specific field (e.g., quantitative modeling in finance, medical AI in healthcare).
-
-A good career path often blends multiple areas above. For example, modern "AI Engineer" roles may expect both data science and software engineering skills. Always review job descriptions for the specific skill set required.
-
----
-
 # 📌 Roadmap Checklist
 
-- [ ] Python
-- [ ] Mathematics & Statistics
-- [ ] NumPy / Pandas
-- [ ] Data Analysis
-- [ ] Machine Learning
-- [ ] ML Engineering
-- [ ] Deep Learning
-- [ ] Computer Vision
-- [ ] Sequence Models
-- [ ] NLP
-- [ ] Transformers
-- [ ] Generative AI
-- [ ] LLMs
-- [ ] LLM Inference
-- [ ] Prompt Engineering
-- [ ] Fine-Tuning
-- [ ] PEFT / LoRA / QLoRA
-- [ ] Embeddings
-- [ ] Vector Databases
-- [ ] RAG
-- [ ] Advanced RAG
-- [ ] Agentic RAG
-- [ ] Multimodal AI
-- [ ] Agentic AI
-- [ ] Agent Frameworks
-- [ ] AI Application Engineering
-- [ ] APIs / FastAPI
-- [ ] Databases
-- [ ] Docker
-- [ ] Cloud
-- [ ] CI/CD
-- [ ] MLOps
-- [ ] LLMOps
+* [ ] Python
+* [ ] Mathematics & Statistics
+* [ ] NumPy / Pandas
+* [ ] Data Analysis
+* [ ] Machine Learning
+* [ ] ML Engineering
+* [ ] Deep Learning
+* [ ] Computer Vision
+* [ ] Sequence Models
+* [ ] NLP
+* [ ] Transformers
+* [ ] Generative AI
+* [ ] LLMs
+* [ ] LLM Inference
+* [ ] Prompt Engineering
+* [ ] Fine-Tuning
+* [ ] PEFT / LoRA / QLoRA
+* [ ] Embeddings
+* [ ] Vector Databases
+* [ ] RAG
+* [ ] Advanced RAG
+* [ ] RAG Evaluation
+* [ ] Multimodal AI
+* [ ] Agentic AI
+* [ ] Agent Frameworks
+* [ ] AI Application Engineering
+* [ ] APIs / FastAPI
+* [ ] Databases
+* [ ] Docker
+* [ ] Cloud
+* [ ] CI/CD
+* [ ] MLOps
+* [ ] LLMOps
 
 ---
 
@@ -1799,7 +1803,21 @@ Copyright (c) 2026 Dinesh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
@@ -1811,6 +1829,3 @@ in the Software without restriction...
 **AI / ML Roadmap**
 
 </div>
-```
-
-This updated README adds **Agentic AI** details (harness engineering, loops, open-source frameworks, provider vs enterprise), an **Agentic RAG** bullet (dynamic retrieval), and a new **Roles & Career Paths** section with example jobs (citing distinctions from data roles and AI/ML roles). All original topics remain.
