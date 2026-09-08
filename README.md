@@ -1,10 +1,36 @@
-<div align="center"> 
+<div align="center">
 
 # 🧠 AI / ML ROADMAP
 
-### A Complete, Deep Guide — From Python to Production AI Systems, and Into a Career
+### From Python & Data → ML → Deep Learning → GenAI → RAG → Agentic AI → AI Systems → Production → Careers
 
- </div> 
+<p>
+  <img src="https://img.shields.io/badge/AI%2FML-Roadmap-blue" alt="AI ML Roadmap">
+  <img src="https://img.shields.io/badge/Generative%20AI-LLM%20%7C%20RAG-purple" alt="Generative AI">
+  <img src="https://img.shields.io/badge/Agentic%20AI-Systems-orange" alt="Agentic AI">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
+</p>
+
+**A dependency-first map of the AI/ML field — including the concepts, system architectures, production layers, and career paths that grow out of them.**
+
+</div> 
+
+---
+
+## 🧭 Quick Navigation
+
+| Area | Covers |
+|---|---|
+| **Foundations** | Python, CS, Mathematics, Statistics, Data, SQL |
+| **ML / DL** | Classical ML, RL, Neural Networks, CV, NLP, Transformers |
+| **Generative AI** | Foundation Models, LLMs, Inference, Fine-Tuning, Multimodal AI |
+| **Knowledge Systems** | Embeddings, Vector Search, RAG, Advanced RAG, Agentic RAG |
+| **Agentic AI** | Loops, Context, Harness, Providers, Tools, Memory, Watchers, Multi-Agent Systems |
+| **AI Systems** | Runtime, APIs, Databases, Security, Sandboxing, Observability, Cloud |
+| **Operations** | MLOps, LLMOps, AgentOps |
+| **Careers** | Data, ML, GenAI, RAG, Agentic, Systems, Infrastructure, Research, Finance |
+
+> **GitHub rendering:** this README intentionally uses GitHub-supported HTML (`details` / `summary`), Markdown, tables, code blocks, badges, and Mermaid. It does **not** depend on custom CSS or JavaScript. GitHub repositories commonly use Mermaid and expandable sections for documentation. citeturn0search5
 
 ---
 
@@ -611,6 +637,66 @@ Multi-agent systems coordinate specialized agents rather than forcing one agent 
 
 Patterns include Supervisor/Worker, Planner/Executor, peer collaboration, handoffs, shared state, message passing, role specialization, conflict resolution, and failure isolation.
 
+## 🏗️ Production Agent System — One Architecture to Remember
+
+```mermaid
+flowchart TB
+    User[User / Event] --> Gateway[API / Gateway]
+    Gateway --> Orchestrator[Agent Orchestrator]
+
+    subgraph Runtime[Agent Harness / Runtime]
+        Context[Context Engineering]
+        Provider[Provider / Model Layer]
+        Loop[Loop Controller]
+        Tools[Tool Registry / Execution]
+        State[State + Memory]
+        Verify[Verification / Evaluation]
+        Guard[Guardrails / Permissions]
+    end
+
+    Orchestrator --> Context
+    Context --> Provider
+    Provider --> Loop
+    Loop --> Tools
+    Tools --> State
+    State --> Context
+    Loop --> Verify
+    Verify -->|pass| Done[Return / Complete]
+    Verify -->|fail| Loop
+    Guard -.controls.-> Provider
+    Guard -.controls.-> Tools
+
+    Watcher[Watcher / Observer] -.monitor.-> Runtime
+    Watcher -->|stop / repair / escalate| Control[Control Action]
+    Control --> Loop
+
+    Runtime --> Env[External Systems / Data / APIs]
+```
+
+### The layers
+
+```text
+Application / User
+        ↓
+Gateway / API
+        ↓
+Orchestrator
+        ↓
+┌───────────────────────────────────────────────────┐
+│                AGENT HARNESS / RUNTIME             │
+│                                                   │
+│  Context → Provider → Loop → Tools → State        │
+│                 ↓        ↓                         │
+│             Verify ← Guardrails                    │
+└───────────────────────────────────────────────────┘
+        ↑                         ↓
+   Watcher / Observer       Environment / APIs
+```
+
+The key distinction is that **the model is not the whole agent**. Current OpenAI engineering work describes the harness as infrastructure around the model/agent loop, including tools, memory, sandbox execution, and other runtime primitives. citeturn0search0turn0search1
+
+---
+
 ### "Ciao Engineering" — terminology check
 
 There is **no broadly established AI engineering discipline called "Ciao Engineering"** in the terminology reviewed for this roadmap. Do not list it as a formal skill or job requirement. If the intended term is context engineering, harness engineering, or loop engineering, use the verified term instead.
@@ -781,6 +867,56 @@ PROGRAMMING → MATH & STATS → DATA & PYTHON → PREPROCESSING → MACHINE LEA
 **RAG vs. Fine-Tuning vs. Agents** — RAG supplies external knowledge at answer-time without touching the model's weights. Fine-Tuning changes the model's weights/behavior directly. An Agent is a control loop that can *use either RAG or a fine-tuned model* (and other tools) as part of accomplishing a broader goal — they solve different problems and are frequently combined.
 
 **Model vs. Application** — A model is one component. A real AI application also needs data pipelines, RAG, tools, an agent loop, an API layer, authentication, a UI, monitoring, and deployment infrastructure around it.
+
+---
+
+# 🧩 Who Owns Which Part of AI?
+
+```mermaid
+flowchart LR
+    Data[Data] --> DS[Data Science]
+    Data --> DE[Data Engineering]
+    DS --> ML[ML Engineering]
+    ML --> MLOps[MLOps / ML Platform]
+    ML --> DL[Deep Learning]
+    DL --> Gen[Generative AI]
+    Gen --> LLM[LLM Engineering]
+    Gen --> RAG[RAG / Retrieval]
+    LLM --> Agent[Agentic AI]
+    RAG --> Agent
+    Agent --> AIS[AI Systems Engineering]
+    AIS --> Infra[AI Infrastructure / Inference]
+    AIS --> Arch[AI Architecture]
+    Gen --> App[AI Application Engineering]
+    Agent --> App
+    AIS --> Ops[LLMOps / AgentOps]
+    Finance[Finance / Risk / Quant] -.domain specialization.-> DS
+    Finance -.domain specialization.-> ML
+    Finance -.domain specialization.-> Gen
+```
+
+### Responsibility, not title, is the real differentiator
+
+| System responsibility | Typical roles | Primary ownership |
+|---|---|---|
+| **Understand business data** | Data Analyst, BI Analyst | Queries, metrics, dashboards, decisions |
+| **Create reliable datasets** | Analytics Engineer, Data Engineer | Modeling, pipelines, storage, quality |
+| **Design data platforms** | Data Architect | Enterprise data architecture and governance |
+| **Discover patterns / build predictions** | Data Scientist, Applied Scientist | Statistics, experiments, models |
+| **Build production ML** | ML Engineer | Training/evaluation/serving lifecycle |
+| **Operate ML platforms** | MLOps, ML Platform Engineer | CI/CD, infrastructure, registries, monitoring |
+| **Build AI features/products** | AI Engineer, GenAI Engineer | Models + backend + product behavior |
+| **Own model behavior/inference** | LLM Engineer | Adaptation, evaluation, inference, optimization |
+| **Own knowledge retrieval** | RAG / Retrieval Engineer | Ingestion, retrieval, ranking, grounding |
+| **Own autonomous execution** | Agentic AI Engineer | Tools, loops, memory, planning, recovery |
+| **Own coordinated agents** | Multi-Agent Systems Engineer | Delegation, handoffs, shared state, coordination |
+| **Own runtime reliability** | AI Systems Engineer | Safety, observability, evaluation, sandboxing |
+| **Own model serving performance** | AI Infrastructure / Inference Engineer | GPUs, serving, latency, throughput |
+| **Own architecture/trade-offs** | AI Solutions Architect | System design, security, cost, cloud, business constraints |
+| **Advance the science** | Research Engineer, Research Scientist | Experiments, algorithms, architectures |
+| **Apply AI to a domain** | Financial Data Scientist, Quant, Risk/Fraud ML, Healthcare/Manufacturing AI | Domain + AI specialization |
+
+> Titles overlap across companies. Use the **responsibility and competency depth** as the source of truth, then compare against the actual job description. fileciteturn12file0L798-L803
 
 ---
 
@@ -1104,10 +1240,10 @@ MIT License — Copyright (c) 2026 Dinesh. Permission is hereby granted, free of
 
 ---
 
- <div align="center"> 
+ <div align="center">
 
-### 🧠 Learn → Build → Deploy → Evaluate → Improve
+### 🧠 Learn → Understand → Build → Evaluate → Deploy → Operate → Specialize
 
 **AI / ML Roadmap**
 
- </div>  
+</div>  
